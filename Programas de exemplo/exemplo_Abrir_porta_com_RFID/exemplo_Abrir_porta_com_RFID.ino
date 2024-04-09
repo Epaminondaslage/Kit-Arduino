@@ -3,7 +3,6 @@
                   Programa para Abrir Uma porta através do RFID
                             Autor : Felipe Gbur
                     Elaborado/Adptado por Epaminondas Lage
-            
  **************************************************************************/
 #include <SPI.h>
 #include <MFRC522.h>
