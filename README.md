@@ -42,7 +42,25 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # kit Arduino Básico
 
+# Programas de exemplos
+
+Neste repositorio estão disponibilizados inúmeros programas de exemplo de de skets básicos para arduino . O Blink é o programa básico de “Hello, World!” para Arduino, onde você faz um LED piscar em intervalos regulares. colie e cole na IDE  do Arduino. Compile o código e transfira para a placa.
+
+ void setup() {
+   pinMode(LED_BUILTIN, OUTPUT);
+ }
+ void loop() {
+   digitalWrite(LED_BUILTIN, HIGH);
+   delay(1000);
+   digitalWrite(LED_BUILTIN, LOW);
+   delay(1000);
+ }
+
+# Apresentações dos slides das aulas
 
 # Aulas práticas
 
-
+* 
+* 
+*
+*
