@@ -2,7 +2,6 @@
                     Placa de Desenvolvimento Arduino UNO 
                    Projeto Controle de Brilho de LED - PWM 
                     Elaborado/Adptado por Epaminondas Lage
-            
  **************************************************************************/
 int ledPin = 9; 
 float sinVal; 
