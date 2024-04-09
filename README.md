@@ -35,4 +35,14 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Repositórios complementares
 
-https://github.com/Epaminondaslage/Kit-IoT
+* https://github.com/Epaminondaslage/Kit-IoT
+*
+*
+*
+
+# kit Arduino Básico
+
+
+# Aulas práticas
+
+
