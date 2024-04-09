@@ -1,9 +1,9 @@
-# Curso: Arduino básico
+<td style="width: 20%;"><img src="/titulo.png" width="100%" /></td>
 
-# Objetivo Geral:  
+# Objetivo Geral  
 O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotécnica a compreender e aplicar os fundamentos da eletrônica e da programação por meio da plataforma Arduino. Ao final do curso, os alunos deverão ser capazes de desenvolver projetos que integrem conhecimentos teóricos e práticos ao problemas reais. 
 
-# Objetivos Específicos:  
+# Objetivos Específicos  
 
 * Fundamentos de eletrônica: Proporcionar aos alunos uma compreensão dos conceitos básicos de eletrônica, desde a teoria dos componentes elétricos básicos, à análise de circuitos simples, até as aplicações das leis da eletricidade. 
 
@@ -19,7 +19,7 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 * Projeto Final Integrado: Estimular a criatividade e a aplicação prática dos conhecimentos adquiridos através da elaboração e implementação de um projeto final que inclui vários conceitos estudados ao longo do curso.  
 
-# Metodologia:   
+# Metodologia 
 
 * Aulas expositivas para apresentação de conceitos teóricos básicos. 
 
@@ -27,8 +27,12 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 * Uso de material educacional adicional, como tutoriais on-line e documentação oficial do Arduino, para apoiar o aprendizado.  
 
-# Avaliação: 
+# Avaliação
 
 * A avaliação baseia-se na participação nas aulas, realização de atividades práticas e teóricas. 
 
-* Avaliação do projeto final, levando em consideração critérios como originalidade, aplicação dos conceitos aprendidos e funcionalidade do projeto.  
+* Avaliação do projeto final, levando em consideração critérios como originalidade, aplicação dos conceitos aprendidos e funcionalidade do projeto.
+
+# Repositórios complementares
+
+https://github.com/Epaminondaslage/Kit-IoT
