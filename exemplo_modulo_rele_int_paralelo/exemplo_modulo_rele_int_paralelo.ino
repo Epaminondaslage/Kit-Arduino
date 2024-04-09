@@ -1,0 +1,41 @@
+const int pinoRele = 8; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
+const int sensorTensao = A2; //PINO ANALÓGICO UTILIZADO PELO SENSOR DE TENSÃO
+
+int status = 0; //VARIÁVEL QUE CONTROLA O STATUS DO MÓDULO RELÉ (LIGADO / DESLIGADO)
+String statusLamp = "DESLIGADA";
+
+void setup(){
+  pinMode(pinoRele, OUTPUT); //DEFINE A PORTA COMO SAÍDA
+  pinMode(sensorTensao, INPUT); //DEFINE A PORTA COMO ENTRADA
+  digitalWrite(pinoRele, HIGH); //MÓDULO RELÉ INICIA DESLIGADO
+  Serial.begin(9600); //INICIALIZA A PORTA SERIAL
+}    
+void loop(){
+
+verificaStatusLamp();//CHAMA O MÉTDODO RESPONSÁVEL POR VERIFICAR SE A LÂMPADA ESTÁ ACESA OU APAGADA
+
+char c = Serial.read(); //VARIÁVEL RESPONSÁVEL POR RECEBER O CARACTER DIGITADO NA JANELA SERIAL
+
+  if (c == 'a'){ //SE CARACTER DIGITADO FOR IGUAL A "a", FAZ
+    if (status == 0){ //SE VARIÁVEL FOR IGUAL A 0, FAZ
+      digitalWrite(pinoRele, LOW); //RELÉ ATIVADO - COMO ESTÁ UTILIZANDO O CONTATO NO(NORMALMENTE ABERTO) DO RELÉ, ELE VAI ATIVAR EM ESTADO "LOW"
+      status = 1; //VARIÁVEL RECEBE O VALOR 1
+    }else{ //SENÃO, FAZ
+      digitalWrite(pinoRele, HIGH); //RELÉ DESATIVADO - COMO ESTÁ UTILIZANDO O CONTATO NO(NORMALMENTE ABERTO) DO RELÉ, ELE VAI DESATIVAR EM ESTADO "HIGH"
+      status = 0; //VARIÁVEL RECEBE O VALOR 0
+    }
+  }
+  Serial.print("LAMPADA: "); //ESCREVE O TEXTO NA JANELA SERIAL
+  Serial.println(statusLamp); //ESCREVE NA JANELA SERIAL O STATUS ATUAL DA LÂMPADA
+  delay(100); //INTERVALO DE 100 MILISEGUNDOS
+}
+//MÉTDODO RESPONSÁVEL POR VERIFICAR SE A LÂMPADA ESTÁ ACESA OU APAGADA
+void verificaStatusLamp(){
+  for (int i = 0; i < 100; i++){ //PARA "i" IGUAL A 0, ENQUANTO "i" MENOR QUE 100, INCREMENTA "i"
+    if(analogRead(sensorTensao) > 150){ //SE LEITURA FOR MAIOR QUE 150, FAZ
+        statusLamp = "LIGADA"; //VARIÁVEL RECEBE O VALOR
+    }else{ //SENÃO
+      statusLamp = "DESLIGADA"; //VARIÁVEL RECEBE O VALOR
+    }
+  }
+}

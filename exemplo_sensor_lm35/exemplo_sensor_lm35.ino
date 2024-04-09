@@ -1,0 +1,16 @@
+float temp; //VARIÁVEL QUE ARMAZENA A TEMPERATURA MEDIDA
+const int sensorPin = A0; //PINO EM QUE O SENSOR ESTÁ CONECTADO
+
+void setup(){
+  Serial.begin(9600); //INICIALIZA A SERIAL
+}
+
+void loop(){
+  temp = analogRead(tempPin); //VARIÁVEL RECEBE A LEITURA DO PINO ANALÓGICO A0
+  temp = temp * 0.48828125; //VARIÁVEL RECEBE O VALOR DA TEMPERATURA VEZES A CONSTANTE
+  Serial.print("Temperatura: "); //EXIBE NO MONITOR SERIAL O TEXTO
+  Serial.print(temp); //EXIBE NO MONITOR SERIAL A TEMPERATURA MEDIDA
+  Serial.print("°C"); //EXIBE NO MONITOR SERIAL O TEXTO
+  Serial.println(); //QUEBRA DE LINHA NA SERIAL
+  delay(1000); //INTERVALO DE 1 SEGUNDO
+}

@@ -1,0 +1,35 @@
+const int pinoRele = 8; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
+const int pinoPulsador = 7; //PINO DIGITAL UTILIZADO PELO PULSADOR
+
+int status = 0; //VARIÁVEL QUE CONTROLA O STATUS DO MÓDULO RELÉ (LIGADO / DESLIGADO)
+
+void setup(){
+  pinMode(pinoRele, OUTPUT); //DEFINE A PORTA COMO SAÍDA
+  pinMode(pinoPulsador, INPUT); //DEFINE A PORTA COMO ENTRADA
+  digitalWrite(pinoRele, HIGH); //MÓDULO RELÉ INICIA DESLIGADO
+  Serial.begin(9600); //INICIALIZA A PORTA SERIAL
+}    
+void loop(){
+  if((digitalRead(pinoPulsador) == 0) && (status == 0)){ //SE A LEITURA DO PULSADOR FOR IGUAL A 0 "E" VARIÁVEL STATUS IGUAL A 0, FAZ  
+    digitalWrite(pinoRele,LOW); //RELÉ ATIVADO - COMO ESTÁ UTILIZANDO O CONTATO NO(NORMALMENTE ABERTO) DO RELÉ, ELE VAI ATIVAR EM ESTADO "LOW"
+    status = 1; //VARIÁVEL RECEBE O VALOR 1
+    delay(200); //INTERVALO DE 200ms
+  }else{
+    if((digitalRead(pinoPulsador) == 0) && (status == 1)){ //SE  A LEITURA DO PULSADOR FOR IGUAL A 0 "E" VARIÁVEL STATUS IGUAL A 1, FAZ 
+    digitalWrite(pinoRele,HIGH); //RELÉ DESATIVADO - COMO ESTÁ UTILIZANDO O CONTATO NO(NORMALMENTE ABERTO) DO RELÉ, ELE VAI DESATIVAR EM ESTADO "HIGH"
+    status = 0; //VARIÁVEL RECEBE O VALOR 0
+    delay(200); //INTERVALO DE 200ms
+    }
+  }
+  char c = Serial.read(); //VARIÁVEL RESPONSÁVEL POR RECEBER O CARACTER DIGITADO NA JANELA SERIAL
+
+  if (c == 'a'){ //SE CARACTER DIGITADO FOR IGUAL A "a", FAZ
+    if (status == 0){ //SE VARIÁVEL FOR IGUAL A 0, FAZ
+      digitalWrite(pinoRele, LOW); //RELÉ ATIVADO - COMO ESTÁ UTILIZANDO O CONTATO NO(NORMALMENTE ABERTO) DO RELÉ, ELE VAI ATIVAR EM ESTADO "LOW"
+      status = 1; //VARIÁVEL RECEBE O VALOR 1
+    }else{ //SENÃO, FAZ
+      digitalWrite(pinoRele, HIGH); //RELÉ DESATIVADO - COMO ESTÁ UTILIZANDO O CONTATO NO(NORMALMENTE ABERTO) DO RELÉ, ELE VAI DESATIVAR EM ESTADO "HIGH"
+      status = 0; //VARIÁVEL RECEBE O VALOR 0
+    }
+  }
+}

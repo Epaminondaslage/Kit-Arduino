@@ -1,0 +1,15 @@
+const int pinoPIR = 3; //PINO DIGITAL UTILIZADO PELO SENSOR DE PRESENÇA
+const int pinoRele = 8; //PINO DIGITAL UTILIZADO PELO MÓDULO RELÉ
+
+void setup(){
+  pinMode(pinoPIR, INPUT); //DEFINE A PORTA COMO ENTRADA
+  pinMode(pinoRele, OUTPUT); //DEFINE A PORTA COMO SAÍDA
+  digitalWrite(pinoRele, HIGH); //MÓDULO RELÉ INICIA DESLIGADO
+}
+void loop(){
+ if(digitalRead(pinoPIR) == HIGH){ //SE A LEITURA DO PINO FOR IGUAL A HIGH, FAZ
+    digitalWrite(pinoRele, LOW); //ENERGIZA O PINO 8 E O RELÉ ATIVA, CONSEQUENTEMENTE A LÂMPADA ACENDE
+ }else{
+    digitalWrite(pinoRele, HIGH); //ENERGIZA O PINO 8 E O RELÉ DESATIVA, CONSEQUENTEMENTE A LÂMPADA APAGA
+ }
+}
