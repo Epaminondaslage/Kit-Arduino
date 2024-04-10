@@ -55,7 +55,7 @@ Veja os principais sensores utilizados no nosso KIT Arduino:
 Neste repositorio estão disponibilizados inúmeros programas de exemplo de de skets básicos para arduino . O Blink é o programa básico de “Hello, World!” para Arduino, onde você faz um LED piscar em intervalos regulares. colie e cole na IDE  do Arduino. Compile o código e transfira para a placa.
 
 '''
-        void setup() {
+void setup() {
         pinMode(LED_BUILTIN, OUTPUT);
         }
         void loop() {
@@ -66,7 +66,6 @@ Neste repositorio estão disponibilizados inúmeros programas de exemplo de de s
          }
 
 '''
-
 # Apresentações dos slides das aulas
 
 A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download :
