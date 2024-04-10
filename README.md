@@ -73,7 +73,7 @@ https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_
 
 # Aulas práticas
 
-* 01- Ajustando o brilho de um LED por PWM com Arduino https://github.com/Epaminondaslage/Kit-IoT/blob/master/material_didatico/guia_de_aulas/01_Ajustando%20o%20brilho%20de%20um%20LED%20por%20PWM%20com%20Arduino.docx
+* 01- Ajustando o brilho de um LED por PWM com Arduino 
 * 02- Comunicação pela rede com o Módulo Ethernet ENC28J60
 * 03- Monitorando Temperatura e Umidade com o sensor DHT11
 * 04- Mostrando a temperatura no LCD 16×2 com o sensor DHT11
