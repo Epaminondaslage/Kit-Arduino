@@ -42,6 +42,14 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # kit Arduino Básico
 
+# Sensores para Arduino
+
+Sensores para Arduino são dispositivos que permitem ao Arduino detectar e medir o ambiente ao seu redor. Eles podem capturar uma variedade de informações, como temperatura, umidade, luz, movimento, som, distância, entre outros. Esses sensores são conectados ao Arduino através de pinos digitais ou analógicos e fornecem dados que podem ser utilizados para tomar decisões ou controlar dispositivos conectados ao Arduino. Existem muitos tipos diferentes de sensores disponíveis para Arduino, cada um com sua função específica e método de operação. Eles são fundamentais para a criação de projetos interativos e inteligentes usando a plataforma Arduino.
+
+Veja os principais sensores utilizados no nosso KIT Arduino:
+
+   https://github.com/Epaminondaslage/Kit-IoT/tree/master/sensores
+
 # Programas de exemplos
 
 Neste repositorio estão disponibilizados inúmeros programas de exemplo de de skets básicos para arduino . O Blink é o programa básico de “Hello, World!” para Arduino, onde você faz um LED piscar em intervalos regulares. colie e cole na IDE  do Arduino. Compile o código e transfira para a placa.
@@ -57,6 +65,10 @@ Neste repositorio estão disponibilizados inúmeros programas de exemplo de de s
  }
 
 # Apresentações dos slides das aulas
+
+A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download :
+
+https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas
 
 # Aulas práticas
 
