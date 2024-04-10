@@ -5,7 +5,7 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Objetivos Específicos  
 
-* Fundamentos de eletrônica: Proporcionar aos alunos uma compreensão dos conceitos básicos de eletrônica, desde a teoria dos componentes elétricos básicos, à análise de circuitos simples, até as aplicações das leis da eletricidade. 
+* **Fundamentos de eletrônica:** Proporcionar aos alunos uma compreensão dos conceitos básicos de eletrônica, desde a teoria dos componentes elétricos básicos, à análise de circuitos simples, até as aplicações das leis da eletricidade. 
 
 * Introdução à programação: Ajudar os alunos a se familiarizarem com conceitos básicos de programação, introduzindo estruturas de controle, variáveis básicas e funções através da linguagem C/C++ utilizando a IDE Arduino.  
 
@@ -72,7 +72,20 @@ https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_
 
 # Aulas práticas
 
-* 
-* 
-*
-*
+* 01- Ajustando o brilho de um LED por PWM com Arduino
+* 02- Comunicação pela rede com o Módulo Ethernet ENC28J60
+* 03- Monitorando Temperatura e Umidade com o sensor DHT11
+* 04- Mostrando a temperatura no LCD 16×2 com o sensor DHT11
+* 05- Sensor de chuva YL
+* 06- Display 7 segmentos
+* 07- Controle de Acesso usando Leitor RFID com Arduino
+* 08 -Ligando um Display LCD 16 x 2 com Arduino
+* 09- Shield LCD 16x2 com Keypad 
+* 10- Multifunction Shield
+* 11- TM1637.docx
+* 12- Módulo RTC DS3231 
+* 13- Módulo ESP8266 
+* 14- Módulo Wireless ESP8266 
+* 15- Shield LCD 16x2 e sensor de nivel
+* 16- Tutorial Módulo Wireless ESP8266 com Arduino 
+* 17- Monitorando Luz com LDR e acionando relé
