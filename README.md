@@ -1,4 +1,5 @@
 <td style="width: 20%;"><img src="img/titulo.png" width="100%" /></td>
+
 # Objetivo Geral  
 
 O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotécnica a compreender e aplicar os fundamentos da eletrônica e da programação por meio da plataforma Arduino. Ao final do curso, os alunos deverão ser capazes de desenvolver projetos que integrem conhecimentos teóricos e práticos a problemas reais. 
