@@ -1,11 +1,11 @@
 <td style="width: 20%;"><img src="img/titulo.png" width="100%" /></td>
-
 # Objetivo Geral  
-O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotécnica a compreender e aplicar os fundamentos da eletrônica e da programação por meio da plataforma Arduino. Ao final do curso, os alunos deverão ser capazes de desenvolver projetos que integrem conhecimentos teóricos e práticos ao problemas reais. 
+
+O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotécnica a compreender e aplicar os fundamentos da eletrônica e da programação por meio da plataforma Arduino. Ao final do curso, os alunos deverão ser capazes de desenvolver projetos que integrem conhecimentos teóricos e práticos a problemas reais. 
 
 # Objetivos Específicos  
 
-* **Fundamentos de eletrônica:** Proporcionar aos alunos uma compreensão dos conceitos básicos de eletrônica, desde a teoria dos componentes elétricos básicos, à análise de circuitos simples, até as aplicações das leis da eletricidade. 
+* **Fundamentos de eletrônica:** Proporcionar aos alunos uma compreensão dos conceitos básicos de eletrônica, desde a teoria dos componentes elétricos básicos à análise de circuitos simples e as aplicações das leis da eletricidade. 
 
 * **Introdução à programação:** Ajudar os alunos a se familiarizarem com conceitos básicos de programação, introduzindo estruturas de controle, variáveis básicas e funções através da linguagem C/C++ utilizando a IDE Arduino.  
 
@@ -13,34 +13,28 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 * **Desenvolvimento de projetos:** Orientar os alunos na concepção e implementação de projetos utilizando Arduino, como controle de LED (diodos emissores de luz), controle de motores DC, utilização de sensores analógicos e digitais, entre outros projetos.  
 
-* **Interação com ambientes reais:** Permitir que os alunos explorem a conexão entre o Arduino e o mundo real, utilizando entradas e saídas digitais e analógicas para controlar dispositivos externos assim como coletar dados do ambiente.  
+* **Interação com ambientes reais:** Permitir que os alunos explorem a conexão entre o Arduino e o mundo real, utilizando entradas e saídas digitais e analógicas para controlar dispositivos externos, assim como coletar dados do ambiente.  
 
-* **Resolução de Problemas:** Desenvolver habilidades de resolução de problemas, permitindo que os alunos identifiquem e resolvam desafios comuns ao desenvolver um projeto Arduino.  
+* **Resolução de problemas:** Desenvolver habilidades de resolução de problemas, permitindo que os alunos identifiquem e resolvam desafios comuns ao desenvolver um projeto Arduino.  
 
-* **Projeto Final Integrado:** Estimular a criatividade e a aplicação prática dos conhecimentos adquiridos através da elaboração e implementação de um projeto final que inclui vários conceitos estudados ao longo do curso.  
+* **Projeto final integrado:** Estimular a criatividade e a aplicação prática dos conhecimentos adquiridos através da elaboração e implementação de um projeto final que inclua vários conceitos estudados ao longo do curso.  
 
 # Metodologia 
 
 * Aulas expositivas para apresentação de conceitos teóricos básicos. 
-
 * Atividades práticas de laboratório para aplicar conhecimentos aprendidos e desenvolver habilidades técnicas. 
-
 * Uso de material educacional adicional, como tutoriais on-line e documentação oficial do Arduino, para apoiar o aprendizado.  
 
 # Avaliação
 
-* A avaliação baseia-se na participação nas aulas, realização de atividades práticas e teóricas. 
-
+* A avaliação baseia-se na participação nas aulas e na realização de atividades práticas e teóricas. 
 * Avaliação do projeto final, levando em consideração critérios como originalidade, aplicação dos conceitos aprendidos e funcionalidade do projeto.
 
-# Repositórios complementares
+# Repositórios Complementares
 
-* https://github.com/Epaminondaslage/Kit-IoT
-*
-*
-*
+* [Kit IoT - GitHub](https://github.com/Epaminondaslage/Kit-IoT)
 
-# kit Arduino Básico
+# Kit Arduino Básico
 
 # Sensores para Arduino
 
@@ -48,45 +42,13 @@ Sensores para Arduino são dispositivos que permitem ao Arduino detectar e medir
 
 Veja os principais sensores utilizados no nosso KIT Arduino:
 
-   https://github.com/Epaminondaslage/Kit-IoT/tree/master/sensores
+* [Sensores - GitHub](https://github.com/Epaminondaslage/Kit-IoT/tree/master/sensores)
 
-# Programas de exemplos
+# Apresentações dos Slides das Aulas
 
-Neste repositorio estão disponibilizados inúmeros programas de exemplo de de skets básicos para arduino . O Blink é o programa básico de “Hello, World!” para Arduino, onde você faz um LED piscar em intervalos regulares. colie e cole na IDE  do Arduino. Compile o código e transfira para a placa.
+A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download:
 
-```ruby
-void setup() {
-        pinMode(LED_BUILTIN, OUTPUT);
-        }
-        void loop() {
-           digitalWrite(LED_BUILTIN, HIGH);
-           delay(1000);
-           digitalWrite(LED_BUILTIN, LOW);
-           delay(1000);
-         }
-```
-# Apresentações dos slides das aulas
+* [Slides de Aulas](https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas)
 
-A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download :
 
-https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas
 
-# Aulas práticas
-
-* 01- Ajustando o brilho de um LED por PWM com Arduino 
-* 02- Comunicação pela rede com o Módulo Ethernet ENC28J60
-* 03- Monitorando Temperatura e Umidade com o sensor DHT11
-* 04- Mostrando a temperatura no LCD 16×2 com o sensor DHT11
-* 05- Sensor de chuva YL
-* 06- Display 7 segmentos
-* 07- Controle de Acesso usando Leitor RFID com Arduino
-* 08 -Ligando um Display LCD 16 x 2 com Arduino
-* 09- Shield LCD 16x2 com Keypad 
-* 10- Multifunction Shield
-* 11- TM1637.docx
-* 12- Módulo RTC DS3231 
-* 13- Módulo ESP8266 
-* 14- Módulo Wireless ESP8266 
-* 15- Shield LCD 16x2 e sensor de nivel
-* 16- Tutorial Módulo Wireless ESP8266 com Arduino 
-* 17- Monitorando Luz com LDR e acionando relé
