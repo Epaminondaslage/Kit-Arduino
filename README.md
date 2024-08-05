@@ -35,7 +35,26 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 * [Kit IoT - GitHub](https://github.com/Epaminondaslage/Kit-IoT)
 
-# Kit Arduino Básico
+# Kit Arduino Básico- Componentes
+
+| Descrição                                                                 | Quantidade |
+|---------------------------------------------------------------------------|------------|
+| Placa Arduino Uno SMD R3 + Cabo USB                                       | 01         |
+| Resistor 10kΩ / 1/8W                                                       | 10         |
+| Resistor 220Ω / 1/8W                                                        | 10         |
+| Módulo Relé / Relay 5V de 1 Canal                                           | 01         |
+| Protoboard 400 Pontos                                                        | 01         |
+| Display LED 7 segmentos, cátodo comum, vermelho 1 Dígito 0,39 cm           | 02         |
+| Display de 7 segmentos com 1 Dígito, ânodo comum, vermelho                  | 01         |
+| Interruptor Botão 12x12 com capa colorida                                    | 02         |
+| Push Button (Chave Táctil) 6x6x5mm                                          | 01         |
+| LED Alto Brilho 5mm Branco                                                   | 10         |
+| LED Vermelho 5mm                                                             | 01         |
+| LED Verde 5mm                                                                | 01         |
+| LED Branco 5mm                                                               | 02         |
+| Sensor Fotoresistor LDR de 5mm                                               | 01         |
+| Sensor DHT22 de Temperatura e Umidade                                        | 01         |
+| Cabo Jumper Macho x Macho 20 cm                                              | 10         |
 
 # Sensores para Arduino
 
