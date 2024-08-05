@@ -65,7 +65,7 @@ Veja os principais sensores utilizados no nosso KIT Arduino:
 
 * [Sensores - GitHub](https://github.com/Epaminondaslage/Kit-IoT/tree/master/sensores)
 
-# Apresentações dos Slides das Aulas
+# Ementa do curso e arquivos ppt das aulas
 
 A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download:
 
