@@ -36,7 +36,6 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 * [Kit IoT - GitHub](https://github.com/Epaminondaslage/Kit-IoT)
 * [Automação Residencial](https://github.com/Epaminondaslage/Automacao_Residencial)
 * [Ecossistema didático de automação residencial e industrial](https://github.com/Epaminondaslage/Automacao-industrial-e-residencial-Ecossistema-didatico)
-* 
 
 
 # Kit Arduino Básico- Componentes
