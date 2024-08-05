@@ -65,6 +65,15 @@ Veja os principais sensores utilizados no nosso KIT Arduino:
 
 * [Sensores - GitHub](https://github.com/Epaminondaslage/Kit-IoT/tree/master/sensores)
 
+# Programas de Exemplo
+
+## Programas de Exemplo
+
+No diretório, você encontrará uma série de sketches de exemplo que demonstram a aplicação de sensores, atuadores e componentes eletrônicos no ambiente Arduino. Estes exemplos foram projetados para ilustrar como conectar e utilizar diferentes módulos e sensores, além de mostrar como integrá-los em projetos práticos. Cada exemplo inclui o código necessário, bem como o diagrama de conexão para facilitar a montagem e a compreensão do funcionamento dos componentes.
+
+Você pode explorar todos os sketches de exemplo disponíveis [aqui](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo). Aproveite para experimentar e modificar os códigos conforme necessário para seus próprios projetos.
+
+
 # Ementa do curso e arquivos ppt das aulas
 
 A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download:
