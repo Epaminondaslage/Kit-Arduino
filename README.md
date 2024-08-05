@@ -76,7 +76,7 @@ Você pode explorar todos os sketches de exemplo disponíveis [aqui](https://git
 
 A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download:
 
-* [Slides de Aulas](https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas)
+* [Ementa e Slides das Aulas](https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas)
 
 
 
