@@ -41,7 +41,7 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Kit Arduino Básico- Componentes
 
-<img src="x.jpg" width="50%" />
+<img src="https://github.com/Epaminondaslage/Kit-Arduino/blob/main/img/kit.jpg" width="30%" />
 
 | Descrição                                                                 | Quantidade |
 |---------------------------------------------------------------------------|------------|
