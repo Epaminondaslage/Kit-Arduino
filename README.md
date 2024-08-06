@@ -41,6 +41,8 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Kit Arduino Básico- Componentes
 
+<img src="x.jpg" width="50%" />
+
 | Descrição                                                                 | Quantidade |
 |---------------------------------------------------------------------------|------------|
 | Placa Arduino Uno SMD R3 + Cabo USB                                       | 01         |
