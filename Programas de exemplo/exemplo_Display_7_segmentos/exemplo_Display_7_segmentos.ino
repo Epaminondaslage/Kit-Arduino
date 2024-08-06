@@ -2,9 +2,7 @@
                     Placa de Desenvolvimento Arduino UNO 
             Programa para apresentar em um display de 7 segmentos de 0 a 9
                              Display catodo comum
-                         Uso de LDR
                     Elaborado/Adptado por Epaminondas Lage
-            
  **************************************************************************/
 
 //                             G F A B E D C
