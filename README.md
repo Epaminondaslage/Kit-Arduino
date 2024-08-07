@@ -41,7 +41,7 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Kit Arduino Básico- Componentes
 
-<img src="https://github.com/Epaminondaslage/Kit-Arduino/blob/main/img/kit.jpg" width="30%" />
+<img src="https://github.com/Epaminondaslage/Kit-Arduino/blob/main/img/kit2.jpg" width="50%" />
 
 | Descrição                                                                 | Quantidade |
 |---------------------------------------------------------------------------|------------|
@@ -63,7 +63,7 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 | Cabo Jumper Macho x Macho 20 cm                                              | 10         |
 
 
-<img src="https://github.com/Epaminondaslage/Kit-Arduino/blob/main/img/kit.jpg" width="30%" />
+<img src="https://github.com/Epaminondaslage/Kit-Arduino/blob/main/img/kit4.jpg" width="50%" />
 
 # Sensores para Arduino
 
