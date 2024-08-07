@@ -67,6 +67,8 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Sensores para Arduino
 
+<img src="/Kit-IoT/img/sensores.jpg" width="30%" >
+
 Sensores para Arduino são dispositivos que permitem ao Arduino detectar e medir o ambiente ao seu redor. Eles podem capturar uma variedade de informações, como temperatura, umidade, luz, movimento, som, distância, entre outros. Esses sensores são conectados ao Arduino através de pinos digitais ou analógicos e fornecem dados que podem ser utilizados para tomar decisões ou controlar dispositivos conectados ao Arduino. Existem muitos tipos diferentes de sensores disponíveis para Arduino, cada um com sua função específica e método de operação. Eles são fundamentais para a criação de projetos interativos e inteligentes usando a plataforma Arduino.
 
 Veja os principais sensores utilizados no nosso KIT Arduino:
