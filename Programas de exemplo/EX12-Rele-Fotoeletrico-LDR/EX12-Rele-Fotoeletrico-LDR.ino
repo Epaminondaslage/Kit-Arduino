@@ -2,13 +2,14 @@
 const int PINO_RELE = 10; // PINO DIGITAL UTILIZADO PELO RELÉ
 const int PINO_LDR = A2;  // PINO ANALÓGICO UTILIZADO PELO LDR
 
-// Variável para armazenar o valor lido na porta analógica
-int leituraLDR; 
+// Constantes para o limiar e o intervalo de tempo
+const int LIMIAR = 600;   // Valor de limiar para determinar escuridão
+const int INTERVALO = 100; // Intervalo de tempo para o delay em milissegundos
 
 void setup() {
   // Configuração dos pinos
-  pinMode(PINO_RELE, OUTPUT); // DEFINE A PORTA COMO SAÍDA
-  pinMode(PINO_LDR, INPUT);   // DEFINE A PORTA COMO ENTRADA
+  pinMode(PINO_RELE, OUTPUT); // Define a porta como saída
+  pinMode(PINO_LDR, INPUT);   // Define a porta como entrada
   
   // Inicialização da comunicação serial para depuração (opcional)
   Serial.begin(9600);
@@ -16,23 +17,15 @@ void setup() {
 
 void loop() {
   // Lê o valor na porta analógica (valor lido em bits que vai de 0 a 1023)
-  leituraLDR = analogRead(PINO_LDR);
+  int leituraLDR = analogRead(PINO_LDR);
   
   // Imprime o valor lido para depuração (opcional)
   Serial.print("Valor lido no LDR: ");
   Serial.println(leituraLDR);
-
-  // Ajuste do valor limite conforme necessário
-  const int LIMIAR = 600;
   
   // Liga o relé no escuro e desliga durante o dia
-  if (leituraLDR < LIMIAR) {
-    digitalWrite(PINO_RELE, HIGH); // LIGA O RELÉ (ESCURO)
-  } else {
-    digitalWrite(PINO_RELE, LOW);  // DESLIGA O RELÉ (CLARO)
-  }
+  digitalWrite(PINO_RELE, leituraLDR < LIMIAR ? HIGH : LOW);
 
-  // Pequena pausa para estabilidade (opcional)
-  delay(100);
+  // Pequena pausa para estabilidade
+  delay(INTERVALO);
 }
-
