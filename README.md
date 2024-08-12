@@ -47,7 +47,7 @@ O objetivo do curso é auxiliar os alunos do primeiro ano do curso de Eletrotéc
 
 # Ementa do curso
 
-A ementa do curso de Arduino básico encontram-se no link abaixo para download:
+A ementa do curso de Arduino básico encontram-se no link abaixo:
 
 * [Ementa do curso](https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas)
 
