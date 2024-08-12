@@ -58,7 +58,7 @@ Os slides de PowerPoint do curso de Arduino são uma ferramenta essencial para t
 - [Apresentação 1](https://docs.google.com/presentation/d/1xNcnfATCOnP69R0GXfWbdoShxTK1as-e/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
 - [Apresentação 2](https://docs.google.com/presentation/d/15aVcfabaigF9RZD1qO9j5lWnm4hAVuIn/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
 
-# Projeto final de disciplina
+# Projeto Final de Disciplina
 
 O projeto final de disciplina tem como objetivo principal proporcionar aos alunos a oportunidade de aplicar de forma prática os conhecimentos adquiridos ao longo do curso, por meio do desenvolvimento de uma solução real e funcional utilizando a plataforma Arduino. Este projeto pode abranger diversas áreas de aplicação, como a automação de sistemas simples, a medição e monitoramento de parâmetros elétricos, ou até mesmo a criação de dispositivos interativos. A intenção é que os alunos integrem conceitos teóricos com habilidades práticas, resultando em um produto que demonstre sua capacidade de resolução de problemas e inovação técnica.
 
