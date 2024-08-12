@@ -8,7 +8,7 @@
 4. [Avaliação](#avaliação)
 5. [Ementa do curso](#ementa-do-curso)
 6. [Slides das Aulas](#slides-das-aulas)
-7. [Projeto Final de Disciplina](#projeto-final-de-disciplina-1)
+7. [Projeto Final de Disciplina](#projeto-final-de-disciplina)
 8. [Kit Arduino Básico - Componentes](#kit-arduino-básico--componentes)
 9. [Sensores para Arduino](#sensores-para-arduino)
 10. [Programas de Exemplo](#programas-de-exemplo)
