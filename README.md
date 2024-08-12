@@ -82,11 +82,25 @@ No diretório, você encontrará uma série de sketches de exemplo que demonstra
 Você pode explorar todos os sketches de exemplo disponíveis [aqui](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo). Aproveite para experimentar e modificar os códigos conforme necessário para seus próprios projetos.
 
 
-# Ementa do curso e arquivos ppt das aulas
+# Ementa do curso
 
-A ementa do curso de Arduino básico e os slides encontram-se no link abaixo para download:
+A ementa do curso de Arduino básico encontram-se no link abaixo para download:
 
 * [Ementa e Slides das Aulas](https://github.com/Epaminondaslage/Kit-IoT/tree/master/material_didatico/ppt_de_aulas)
+
+# Slides das Aulas
+
+Os slides de PowerPoint do curso de Arduino são uma ferramenta essencial para transmitir o conteúdo de forma estruturada e visualmente atraente. Eles foram elaborados com o objetivo de facilitar o entendimento dos conceitos fundamentais, práticas de programação, e aplicações de hardware, proporcionando uma experiência de aprendizado  envolvente para os alunos.
+
+- [Apresentação 1](https://docs.google.com/presentation/d/1xNcnfATCOnP69R0GXfWbdoShxTK1as-e/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
+- [Apresentação 2](https://docs.google.com/presentation/d/15aVcfabaigF9RZD1qO9j5lWnm4hAVuIn/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
+
+# Projeto final de disciplina
+
+O projeto final de disciplina tem como objetivo principal proporcionar aos alunos a oportunidade de aplicar de forma prática os conhecimentos adquiridos ao longo do curso, por meio do desenvolvimento de uma solução real e funcional utilizando a plataforma Arduino. Este projeto pode abranger diversas áreas de aplicação, como a automação de sistemas simples, a medição e monitoramento de parâmetros elétricos, ou até mesmo a criação de dispositivos interativos. A intenção é que os alunos integrem conceitos teóricos com habilidades práticas, resultando em um produto que demonstre sua capacidade de resolução de problemas e inovação técnica.
+
+- [Projeto - Instruções Gerais](https://docs.google.com/presentation/d/1qHnl0xS7vUqv_oAijarzJGzUGFq1pJfB/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
+
 
 
 
