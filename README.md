@@ -1,37 +1,18 @@
 <td style="width: 20%;"><img src="img/titulo.png" width="100%" /></td>
-# Índice
 
-1. ![Imagem Título](img/titulo.png)
+# Índice do Repositório
 
-2. [Objetivo Geral](#objetivo-geral)
-
-3. [Objetivos Específicos](#objetivos-específicos)
-
-    - [Fundamentos de eletrônica](#fundamentos-de-eletrônica)
-    - [Introdução à programação](#introdução-à-programação)
-    - [Explorar o Arduino](#explorar-o-arduino)
-    - [Desenvolvimento de projetos](#desenvolvimento-de-projetos)
-    - [Interação com ambientes reais](#interação-com-ambientes-reais)
-    - [Resolução de problemas](#resolução-de-problemas)
-    - [Projeto final de disciplina](#projeto-final-de-disciplina)
-
-4. [Metodologia](#metodologia)
-
-5. [Avaliação](#avaliação)
-
-6. [Ementa do curso](#ementa-do-curso)
-
-7. [Slides das Aulas](#slides-das-aulas)
-
-8. [Projeto final de disciplina](#projeto-final-de-disciplina-1)
-
-9. [Kit Arduino Básico - Componentes](#kit-arduino-básico--componentes)
-
-10. [Sensores para Arduino](#sensores-para-arduino)
-
-11. [Programas de Exemplo](#programas-de-exemplo)
-
-12. [Repositórios Complementares](#repositórios-complementares)
+1. [Objetivo Geral](#objetivo-geral)
+2. [Objetivos Específicos](#objetivos-específicos)
+3. [Metodologia](#metodologia)
+4. [Avaliação](#avaliação)
+5. [Ementa do curso](#ementa-do-curso)
+6. [Slides das Aulas](#slides-das-aulas)
+7. [Projeto final de disciplina](#projeto-final-de-disciplina-1)
+8. [Kit Arduino Básico - Componentes](#kit-arduino-básico--componentes)
+9. [Sensores para Arduino](#sensores-para-arduino)
+10. [Programas de Exemplo](#programas-de-exemplo)
+11. [Repositórios Complementares](#repositórios-complementares)
 
 # Objetivo Geral  
 
