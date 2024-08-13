@@ -6,6 +6,26 @@ Bem-vindo ao repositório **Kit Arduino**! Este repositório contém uma coleç�
 
 Cada pasta neste repositório contém um programa específico ou conjunto de programas. Clique nos links abaixo para acessar diretamente os exemplos.
 
+ # Exercícios Apresentados em Sala
+
+- [Ex 1 - PPT Aula - Blink](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX1-Blink)
+- [Ex 2 - PPT Aula - Sinalizador de porta de Garagem](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX2-Sinalizador-Garagem)
+- [Ex 3 - PPT Aula - Sequencial 3 canais](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX3-Sequencial-3-canais)
+- [Ex 4 - Pisca-Pisca - While]( [# Exercícios Apresentados em Sala](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX4-Pisca-com-while))
+- [Ex 5 - Pisca-Pisca 3 vezes](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX5-Pisca-3x)
+- [Ex 6 - Sequencial 4 Canais](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX6-Sequencial-4-canais)
+- [Ex 7 - Pisca-pisca Aleatório](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX7-Pisca-Aleatorio)
+- [Ex 8 - Display 7 segmentos](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX7-Pisca-Aleatorio)
+- [Ex 9 - Comando IF](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX9-Comando-IF)
+- [Ex 10 - Piano 3 Notas](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX10-piano-3-notas)
+- [Ex 11 - Leitura de Porta Serial](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX11-Leitura-da-porta-serial)
+- [Ex 12 - Relé Fotoeletrico com LDR](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX12-Rele-Fotoeletrico-LDR)
+- [Ex 13 - Estação Meteorologica](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX13-Estacao-Meteorologica)
+- [Ex 14 - Relé Foelétrico PWM](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas de exemplo/EX14-Rele-fotoeletrico-PWM)
+
+
+ # Exemplos de sketchs para Arduino Uno
+
 - [01 - Sensor de Temperatura LM35](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_sensor_lm35)
 - [02 - Sistema de Controle de Acesso com Arduino e RFID](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Abrir_porta_com_RFID)
 - [03 - Controle de Brilho de LED com PWM - Arduino UNO](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Controle_de_Brilho_de_LED_PWM)
