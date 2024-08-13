@@ -10,7 +10,7 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [02 - Sistema de Controle de Acesso com Arduino e RFID](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Abrir_porta_com_RFID)
 - [03 - Controle de Brilho de LED com PWM - Arduino UNO](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Controle_de_Brilho_de_LED_PWM)
 - [04 - Controle de Display de 7 Segmentos](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Display_7_segmentos)
-- [05 - Autoscroll com Display LCD 16x2l](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Display_LCD_Autoscroll)
+- [05 - Autoscroll com Display LCD 16x2](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Display_LCD_Autoscroll)
 - [06 - Scanner de Endereços I2C](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_I2C_address_discover)
 - [07 - Placar Eletrônico com Módulo Max7219](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Matriz_de_led_8x8_Placar_eletronico_I)
 - [08 - Animação com Matriz de LEDs](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Matriz_de_led_8x8_animacao)
