@@ -4,7 +4,7 @@
                     Elaborado/Adaptado por Epaminondas Lage
  **************************************************************************
 
- Biblioteca LiquidCrystal - Autoscroll
+  Biblioteca LiquidCrystal - Autoscroll
 
   Demonstra o uso de um display LCD 16x2. A biblioteca LiquidCrystal
   funciona com todos os displays LCD compatíveis com o driver
