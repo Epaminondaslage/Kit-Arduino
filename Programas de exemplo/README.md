@@ -36,7 +36,7 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [08 - Animação com Matriz de LEDs](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Matriz_de_led_8x8_animacao)
 - [09 - Controle de Lâmpada com LDR](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Monitorando_luminosidade_com_LDR)
 - [10 - Controle de Acesso com RFID, Display 16x2 e Relé](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_RFID_e_Display_LCD)
-- [11 - ontrole de RTC DS3231](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_RTC)
+- [11 - Controle de RTC DS3231](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_RTC)
 
 ## Como Usar
 
