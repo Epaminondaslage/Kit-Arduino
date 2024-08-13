@@ -11,7 +11,7 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [Ex 1 - PPT Aula - Blink](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX1-Blink)
 - [Ex 2 - PPT Aula - Sinalizador de porta de Garagem](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX2-Sinalizador-Garagem)
 - [Ex 3 - PPT Aula - Sequencial 3 canais](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX3-Sequencial-3-canais)
-- [Ex 4 - Pisca-Pisca - While] (https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX4-Pisca-com-while)
+- [Ex 4 - Pisca-Pisca - While](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX4-Pisca-com-while)
 - [Ex 5 - Pisca-Pisca 3 vezes](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX5-Pisca-3x)
 - [Ex 6 - Sequencial 4 Canais](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX6-Sequencial-4-canais)
 - [Ex 7 - Pisca-pisca Aleatório](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX7-Pisca-Aleatorio)
