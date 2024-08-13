@@ -39,7 +39,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 // Define os PINs autorizados para abrir a fechadura
 int numpin = 4;
 char* pinliberados[] = {"14 A7 B1 7A", "D3 7F 94 79", "51 48 9B 2E", "24 C4 B3 7A"};
-char* nomeliberados[] = {"Chave", "Tag", "Cartao", "Blandino"};
+char* nomeliberados[] = {"Chave", "Tag", "Cartao", "Epaminondas"};
 
 // Define os pinos que serão utilizados para ligação ao display
 LiquidCrystal lcd(6, 7, 5, 4, 3, 2); 
