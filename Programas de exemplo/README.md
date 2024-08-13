@@ -6,7 +6,7 @@ Bem-vindo ao repositório **Kit Arduino**! Este repositório contém uma coleç�
 
 Cada pasta neste repositório contém um programa específico ou conjunto de programas. Clique nos links abaixo para acessar diretamente os exemplos.
 
- # Exercícios Apresentados em Sala
+ ## Exercícios Apresentados em Sala
 
 - [Ex 1 - PPT Aula - Blink](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX1-Blink)
 - [Ex 2 - PPT Aula - Sinalizador de porta de Garagem](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX2-Sinalizador-Garagem)
@@ -21,10 +21,9 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [Ex 11 - Leitura de Porta Serial](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX11-Leitura-da-porta-serial)
 - [Ex 12 - Relé Fotoeletrico com LDR](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX12-Rele-Fotoeletrico-LDR)
 - [Ex 13 - Estação Meteorologica](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX13-Estacao-Meteorologica)
-- [Ex 14 - Relé Foelétrico PWM](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas de exemplo/EX14-Rele-fotoeletrico-PWM)
+- [Ex 14 - Relé Fotoelétrico-PWM](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/EX14-Rele-fotoeletrico-PWM)
 
-
- # Exemplos de sketchs para Arduino Uno
+ ## Exemplos de sketchs para Arduino Uno
 
 - [01 - Sensor de Temperatura LM35](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_sensor_lm35)
 - [02 - Sistema de Controle de Acesso com Arduino e RFID](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Abrir_porta_com_RFID)
