@@ -1,3 +1,11 @@
+/*
+  Medição de Temperatura e Umidade com DHT11 e Display LCD
+  Este exemplo demonstra como utilizar um sensor DHT11 para medir temperatura e umidade,
+  exibindo os valores em um display LCD 16x2 via I2C.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <DHT.h>
