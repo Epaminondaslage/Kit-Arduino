@@ -15,7 +15,7 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [07 - Sensor Ultrassônico]()
 - [08 - Controle de Servomotor]()
 - [09 - Display LCD 16x2]()
-- [10 - Relógio RTC DS1307])
+- [10 - Relógio RTC DS1307]()
 - [11 - Matriz de LED com MAX7219]()
 - [12 - Sensor de Umidade do Solo]()
 - [13 - Sensor de Gás MQ-2]()
