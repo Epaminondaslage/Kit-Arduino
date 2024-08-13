@@ -1,3 +1,11 @@
+/*
+  Exibição de Dígitos em um Display de 7 Segmentos
+  Este exemplo demonstra como exibir os dígitos de 0 a 9 em um display de 7 segmentos,
+  utilizando um Arduino UNO.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
 // Definindo os pinos para cada segmento do display de 7 segmentos
 const int segA = 2;
 const int segB = 3;
