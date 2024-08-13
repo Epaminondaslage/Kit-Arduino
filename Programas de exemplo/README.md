@@ -7,7 +7,7 @@ Bem-vindo ao repositório **Kit Arduino**! Este repositório contém uma coleç�
 Cada pasta neste repositório contém um programa específico ou conjunto de programas. Clique nos links abaixo para acessar diretamente os exemplos.
 
 - [01 - Sensor de Temperatura LM35](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_sensor_lm35)
-- [02 - Controle de Lâmpada com LDR]()
+- [02 - Sistema de Controle de Acesso com Arduino e RFID](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Abrir_porta_com_RFID)
 - [03 - Controle de Motor com PWM]()
 - [04 - Display de 7 Segmentos]()
 - [05 - Teclado Matricial]()
