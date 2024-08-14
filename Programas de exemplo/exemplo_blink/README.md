@@ -1,4 +1,4 @@
-## Introdução ao Projeto
+## Programa Blink 
 
 Este projeto é um exemplo básico de como controlar um LED utilizando a placa de desenvolvimento Arduino Uno. Ele foi projetado para introduzir conceitos fundamentais de programação de microcontroladores, como a configuração de pinos digitais como entrada ou saída e o uso de funções básicas para manipular o hardware conectado ao Arduino.
 
