@@ -36,6 +36,9 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [09 - Controle de Lâmpada com LDR](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Monitorando_luminosidade_com_LDR)
 - [10 - Controle de Acesso com RFID, Display 16x2 e Relé](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_RFID_e_Display_LCD)
 - [11 - Controle de RTC DS3231](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_RTC)
+- [12 - Pisca Aleatoriamente um dos Quatro LEDs](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Random_4_canais)
+- [13 - Relógio com o Integrado DS3231 (RTC)](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Relogio)
+
 
 ## Como Usar
 
