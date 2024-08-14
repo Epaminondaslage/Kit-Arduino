@@ -38,8 +38,11 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [11 - Controle de RTC DS3231](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_RTC)
 - [12 - Pisca Aleatoriamente um dos Quatro LEDs](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Random_4_canais)
 - [13 - Relógio com o Integrado DS3231 (RTC)](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Relogio)
+- [14 - Verificação de Senha com Teclado Matricial 4x4](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Teclado_matricial__membrana_4x4_)
+- [15 - Medição de Corrente e Potência com Sensor ACS712)](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_amperimetro)
+- [16 - Web Server com ESP8266 e Arduino UNO](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_arduino_esp8266)
 
-
+  
 ## Como Usar
 
 1. Clone este repositório/programa ou baixe o código.
