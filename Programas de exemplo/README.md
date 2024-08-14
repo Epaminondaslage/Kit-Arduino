@@ -42,7 +42,7 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [15 - Medição de Corrente e Potência com Sensor ACS712)](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_amperimetro/README.md)
 - [16 - Web Server com ESP8266 e Arduino UNO](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_arduino_esp8266/README.md)
 - [17 - Blink](https://github.com/Epaminondaslage/Kit-Arduino/blob/main/Programas%20de%20exemplo/exemplo_blink/README.md)
-- [18 - Controle Sequencial de LEDs]([https://github.com/Epaminondaslage](https://github.com/Epaminondaslage/Kit-Arduino/blob/main/Programas%20de%20exemplo/exemplo_blink_led/README.md)
+- [18 - Controle Sequencial de LEDs](https://github.com/Epaminondaslage/Kit-Arduino/blob/main/Programas%20de%20exemplo/exemplo_blink_led/README.md)
 - [19 - ](https://github.com/Epaminondaslage)
 - [20 - ](https://github.com/Epaminondaslage)
 - [21 - ](https://github.com/Epaminondaslage)
