@@ -1,14 +1,11 @@
-## Explicação do Código
+# Projeto: Controle Sequencial de LEDs com Arduino
 
-Este código controla três LEDs conectados aos pinos digitais 13, 12 e 11 do Arduino de forma sequencial, acendendo cada LED por 1 segundo enquanto os outros permanecem apagados. O ciclo se repete indefinidamente. A principal melhoria neste código em comparação com a versão anterior é a eficiência, conseguida através do uso de arrays e loops.
+## Introdução
 
-### Declaração de Variáveis e Configurações
+Este projeto demonstra como controlar três LEDs conectados a um Arduino de forma sequencial. O código acende e apaga os LEDs em intervalos definidos, criando um padrão de piscar que se repete indefinidamente. A implementação faz uso eficiente de arrays e loops para simplificar o controle dos LEDs, tornando o código mais conciso, fácil de manter e escalável.
 
-```cpp
-const int ledPins[] = {13, 12, 11}; // Array que define os pinos dos LEDs
-const int numLeds = 3; // Número de LEDs controlados
-const int interval = 1000; // Intervalo de tempo em milissegundos para cada LED
-```
+Este projeto é ideal para iniciantes que desejam aprender sobre controle de hardware com o Arduino, especificamente no que diz respeito ao controle de múltiplos LEDs. Além de proporcionar um entendimento básico sobre a configuração de pinos digitais como saídas, o projeto também introduz o conceito de ciclos de controle repetitivos, essenciais em muitos projetos de automação e eletrônica.
+
 ## Explicação do Código
 
 Este código controla três LEDs conectados aos pinos digitais 13, 12 e 11 do Arduino de forma sequencial, acendendo cada LED por 1 segundo enquanto os outros permanecem apagados. O ciclo se repete indefinidamente. A principal melhoria neste código em comparação com a versão anterior é a eficiência, conseguida através do uso de arrays e loops.
