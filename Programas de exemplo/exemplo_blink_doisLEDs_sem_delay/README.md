@@ -1,4 +1,4 @@
-## Descrição da Funcionalidade
+## Pisca dois leds com a função `millis()`
 
 Este projeto demonstra como controlar dois LEDs conectados aos pinos digitais 13 e 12 do Arduino de forma independente, utilizando a função `millis()` para gerenciar os intervalos de tempo sem bloquear o loop principal.
 
