@@ -1,9 +1,9 @@
 /**************************************************************************
  *                 Placa de Desenvolvimento Arduino Uno                   *
  *                    Exemplo Básico de Piscar um LED                     *
- * Elaborado/Adptado por [Seu Nome ou Epaminondas Lage]                   *
+ * Elaborado/Adptado por  Epaminondas Lage                                *
  *                                                                        *
- * Este código pisca o LED embutido na placa Arduino UNO conectado ao      *
+ * Este código pisca o LED embutido na placa Arduino UNO conectado ao     *
  * pino 13 em intervalos de 1 segundo. É um exemplo simples para iniciar  *
  * o aprendizado sobre controle de hardware com o Arduino.                *
  **************************************************************************/
