@@ -1,20 +1,27 @@
-void setup(){
-pinMode(13, OUTPUT); //DECLARA O PINO 13 COMO SENDO SAÍDA
-pinMode(12, OUTPUT); //DECLARA O PINO 12 COMO SENDO SAÍDA
-pinMode(11, OUTPUT); //DECLARA O PINO 11 COMO SENDO SAÍDA
-}
-void loop() {
+/**************************************************************************
+ *                 Placa de Desenvolvimento Arduino Uno                   *
+ *             Controle Sequencial de Três LEDs com Intervalos            *
+ * Elaborado/Adaptado por [Seu Nome ou Epaminondas Lage]                  *
+ *                                                                        *
+ * Este código controla três LEDs conectados aos pinos digitais 13, 12 e  *
+ * 11 de forma sequencial. Cada LED é aceso por 1 segundo enquanto os     *
+ * outros permanecem apagados. O ciclo se repete indefinidamente.         *
+ **************************************************************************/
 
-digitalWrite(13, HIGH); //ENERGIZA A PORTA DIGITAL 13 E O LED ACENDE
-digitalWrite(12, LOW); //DESENERGIZA A PORTA DIGITAL 12 E O LED APAGA
-digitalWrite(11, LOW); //DESENERGIZA A PORTA DIGITAL 11 E O LED APAGA
-delay(1000); //INTERVALO DE 1 SEGUNDO
-digitalWrite(12, HIGH); //ENERGIZA A PORTA DIGITAL 12 E O LED ACENDE
-digitalWrite(11, LOW); //DESENERGIZA A PORTA DIGITAL 11 E O LED APAGA
-digitalWrite(13, LOW); //DESENERGIZA A PORTA DIGITAL 13 E O LED APAGA
-delay(1000); //INTERVALO DE 1 SEGUNDO
-digitalWrite(12, LOW); //DESENERGIZA A PORTA DIGITAL 12 E O LED APAGA
-digitalWrite(13, LOW); //DESENERGIZA A PORTA DIGITAL 13 E O LED APAGA
-digitalWrite(11, HIGH); //ENERGIZA A PORTA DIGITAL 11 E O LED ACENDE
-delay(1000); //INTERVALO DE 1 SEGUNDO
+const int ledPins[] = {13, 12, 11}; // Array que define os pinos dos LEDs
+const int numLeds = 3; // Número de LEDs controlados
+const int interval = 1000; // Intervalo de tempo em milissegundos para cada LED
+
+void setup() {
+    for (int i = 0; i < numLeds; i++) {
+        pinMode(ledPins[i], OUTPUT); // Declara cada pino de LED como saída
+    }
+}
+
+void loop() {
+    for (int i = 0; i < numLeds; i++) {
+        digitalWrite(ledPins[i], HIGH); // Acende o LED no pino atual
+        delay(interval); // Espera pelo intervalo definido
+        digitalWrite(ledPins[i], LOW); // Apaga o LED no pino atual
+    }
 }
