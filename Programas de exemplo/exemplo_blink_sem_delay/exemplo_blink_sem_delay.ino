@@ -1,24 +1,35 @@
-int ledPin = 13; //PINO EM QUE O LED ESTÁ CONECTADO
-int ledStatus = LOW; //DEFINE QUE O ESTADO INICIAL DO LED É DESLIGADO
+/**************************************************************************
+ *                 Placa de Desenvolvimento Arduino Uno                   *
+ *               Controle de LED com Temporização Usando millis()         *
+ * Elaborado/Adaptado por Epaminondas Lage                                *
+ *                                                                        *
+ * Este código controla um LED conectado ao pino 13 do Arduino, fazendo-o *
+ * piscar em intervalos regulares de 1 segundo. O código utiliza a função *
+ * millis() para controlar o tempo sem bloquear a execução do programa,   *
+ * permitindo uma operação mais eficiente.                                *
+ **************************************************************************/
 
-long previousMillis = 0; //VARIÁVEL QUE CONTROLA O TEMPO
-long redLedInterval = 1000; //VARIÁVEL QUE REGISTRA O INTERVALO (1000ms = 1 SEGUNDO)
+int ledPin = 13; // Pino em que o LED está conectado
+int ledStatus = LOW; // Define que o estado inicial do LED é desligado
+
+long previousMillis = 0; // Variável que armazena o tempo anterior em milissegundos
+long redLedInterval = 1000; // Intervalo de tempo (1000ms = 1 segundo) entre mudanças de estado do LED
 
 void setup() {
-pinMode(ledPin, OUTPUT); //DECLARA O PINO COMO SENDO SAÍDA
+    pinMode(ledPin, OUTPUT); // Configura o pino 13 como saída para controlar o LED
 }
 
 void loop(){
-  unsigned long currentMillis = millis(); //VARIÁVEL RECEBE O TEMPO ATUAL EM MILISEGUNDOS
+    unsigned long currentMillis = millis(); // Armazena o tempo atual em milissegundos
 
-  if (currentMillis - previousMillis > redLedInterval) { //SE O TEMPO ATUAL MENOS O TEMPO ANTERIOR FOR MENOR QUE O INTERVALO, FAZ
-    previousMillis = currentMillis; //TEMPO ANTERIOR GUARDA O TEMPO ATUAL
+    if (currentMillis - previousMillis > redLedInterval) { // Verifica se o tempo decorrido é maior que o intervalo definido
+        previousMillis = currentMillis; // Atualiza o tempo anterior para o tempo atual
 
-    if (ledStatus == LOW) { //VERIFICA O ESTADO ATUAL DO LED E SE ESTIVER EM LOW MUDA PARA HIGH
-      ledStatus = HIGH; //VARIÁVEL RECEBE ESTADO HIGH(LIGA A PORTA)
-    } else { //VERIFICA O ESTADO ATUAL DO LED E SE ESTIVER EM HIGH MUDA PARA LOW
-      ledStatus = LOW; //VARIÁVEL RECEBE ESTADO LOW(DESLIGA A PORTA)
+        if (ledStatus == LOW) { // Verifica o estado atual do LED; se estiver desligado, muda para ligado
+            ledStatus = HIGH; // Muda o estado do LED para ligado
+        } else { // Se o LED estiver ligado, muda para desligado
+            ledStatus = LOW; // Muda o estado do LED para desligado
+        }
+        digitalWrite(ledPin, ledStatus); // Escreve o estado do LED (ligado ou desligado) no pino 13
     }
-    digitalWrite(ledPin, ledStatus); //ESCREVE NA PORTA DIGITAL 13 O ESTADO DO LED (HIGH OU LOW)
-  }
 }
