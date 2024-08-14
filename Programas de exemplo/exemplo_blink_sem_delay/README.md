@@ -1,4 +1,4 @@
-# Projeto: Piscar LED com Controle de Tempo Usando Arduino seum usar a função Delay()
+# Projeto: Piscar LED com Controle de Tempo sem usar a função Delay()
 
 ## Introdução
 
