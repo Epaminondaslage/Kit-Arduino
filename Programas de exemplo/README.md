@@ -41,7 +41,7 @@ Cada pasta neste repositório contém um programa específico ou conjunto de pro
 - [14 - Verificação de Senha com Teclado Matricial 4x4](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_Teclado_matricial__membrana_4x4_)
 - [15 - Medição de Corrente e Potência com Sensor ACS712)](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_amperimetro)
 - [16 - Web Server com ESP8266 e Arduino UNO](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_arduino_esp8266)
-- [17 - Blink](https://github.com/Epaminondaslage)
+- [17 - Blink]([https://github.com/Epaminondaslage](https://github.com/Epaminondaslage/Kit-Arduino/tree/main/Programas%20de%20exemplo/exemplo_blink))
 - [18 - ](https://github.com/Epaminondaslage)
 - [19 - ](https://github.com/Epaminondaslage)
 - [20 - ](https://github.com/Epaminondaslage)
