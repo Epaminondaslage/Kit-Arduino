@@ -1,48 +1,51 @@
-
 /**************************************************************************
  *                 Placa de desenvolvimento Arduino Uno                   *
- *                           Teclado maticial 4x4                         *
- * Fonte: http://blogmasterwalkershop.com.br/wp-content/uploads/2018/06/img01_como_usar_com_arduino_teclado_matricial_de_membrana_4x4_uno_mega_2560_leonardo_nano.jpg                                                               *
+ *                           Teclado Matricial 4x4                        *
+ * Fonte: http://blogmasterwalkershop.com.br/                             *
+ * Adaptação : Epaminondas Souza Lage                                     *
  **************************************************************************/
-#include <Password.h>
 
-Password password = Password( "1234" );
+#include <Password.h> // Inclui a biblioteca para manipulação de senhas
 
-byte currentLength = 0;
+Password password = Password("1234"); // Define a senha correta como "1234"
+
+byte currentLength = 0; // Variável que armazena o tamanho atual da entrada
 
 void setup(){
- Serial.begin(9600);
- Serial.println("Try to guess the password!");
- Serial.println("Reset with ! evaluate with ?");
- Serial.print("Enter password: ");
+  Serial.begin(9600); // Inicializa a comunicação serial
+  Serial.println("Tente adivinhar a senha!"); // Exibe a mensagem de boas-vindas
+  Serial.println("Resete com ! e avalie com ?"); // Instruções para resetar ou verificar a senha
+  Serial.print("Digite a senha: "); // Solicita a entrada da senha
 }
 
 void loop(){
- if (Serial.available()){
-   char input = Serial.read();
-   switch (input){
-     case '!': //reset password
-       password.reset();
-       currentLength = 0;
-       Serial.println("\tPassword is reset!");
-     break;
-     case '?': //evaluate password
-       if (password.evaluate()){
-         Serial.println("\tYou guessed the correct password!");
-       }else{
-         Serial.println("\tYou did not guess the correct password!");
-       }
-     break;
-     default: //append any keypress that is not a '!' nor a '?' to the currently guessed password.
-       password.append(input);
-       currentLength++;
-       
-       //Print some feedback.
-       Serial.print("Enter password: ");
-       for (byte i=0; i<currentLength; i++){
-         Serial.print('*');
-       }
-       Serial.println();
+  if (Serial.available()){ // Verifica se há dados disponíveis na serial
+    char input = Serial.read(); // Lê o caractere digitado
+    switch (input){
+      case '!': // Reseta a senha digitada
+        password.reset(); // Reseta o estado atual da senha
+        currentLength = 0; // Reseta o comprimento da entrada
+        Serial.println("\tSenha foi resetada!"); // Notifica que a senha foi resetada
+      break;
+      
+      case '?': // Avalia a senha digitada
+        if (password.evaluate()){ // Verifica se a senha digitada é a correta
+          Serial.println("\tVocê acertou a senha!"); // Notifica sucesso
+        } else {
+          Serial.println("\tVocê não acertou a senha!"); // Notifica falha
+        }
+      break;
+      
+      default: // Adiciona o caractere digitado à senha, caso não seja '!' nem '?'
+        password.append(input); // Adiciona o caractere à senha atual
+        currentLength++; // Incrementa o comprimento da entrada
+        
+        // Exibe feedback visual com asteriscos para cada caractere digitado
+        Serial.print("Digite a senha: ");
+        for (byte i = 0; i < currentLength; i++){
+          Serial.print('*'); // Exibe um asterisco para cada caractere
+        }
+        Serial.println(); // Quebra de linha para a próxima entrada
     }
- }
+  }
 }
