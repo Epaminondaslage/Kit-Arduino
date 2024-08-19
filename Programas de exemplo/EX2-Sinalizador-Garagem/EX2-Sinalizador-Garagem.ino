@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Define os pinos dos LEDs
 const int ledPin1 = 8;
 const int ledPin2 = 9;
