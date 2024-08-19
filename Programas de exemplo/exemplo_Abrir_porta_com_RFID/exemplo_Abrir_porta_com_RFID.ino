@@ -1,88 +1,76 @@
-/**************************************************************************
-                    Placa de Desenvolvimento Arduino UNO 
-                  Programa para Abrir Uma porta através do RFID
-                            Autor : Felipe Gbur
-                    Elaborado/Adptado por Epaminondas Lage
- **************************************************************************/
-#include <SPI.h> // Inclui a biblioteca para comunicação SPI
-#include <MFRC522.h> // Inclui a biblioteca para o leitor RFID MFRC522
+/*
+ * Programa para tocar uma melodia simples com um buzzer usando Arduino.
+ * Melodia: "Ode to Joy" de Ludwig van Beethoven.
+ *
+ * Conexões:
+ * - Pino positivo do buzzer no pino digital 8 do Arduino.
+ * - Pino negativo do buzzer no pino GND do Arduino.
+ *
+ * Notas:
+ * - As notas são representadas em Hertz (Hz).
+ * - Pausas entre as notas são representadas por 0 Hz.
+ *
+ * Código adptado por: Epaminondas Lage
+ */
 
-// Definições dos pinos
-#define SS_PIN 10  // Pino de seleção do periférico (SS) para o MFRC522
-#define RST_PIN 9  // Pino de reset para o MFRC522
-#define LED_R 5    // Pino do LED vermelho
-#define LED_G 3    // Pino do LED verde
-char st[20]; // Declara um array de caracteres para armazenar strings
+// Definindo o pino onde o buzzer está conectado
+const int buzzerPin = 8;
 
-// Instancia o objeto MFRC522 usando os pinos definidos
-MFRC522 mfrc522(SS_PIN, RST_PIN); 
+// Frequências das notas em Hertz
+const int NOTE_C4 = 261; // Dó central
+const int NOTE_D4 = 293; // Ré
+const int NOTE_E4 = 329; // Mi
+const int NOTE_F4 = 349; // Fá
+const int NOTE_G4 = 392; // Sol
+const int NOTE_A4 = 440; // Lá
+const int NOTE_B4 = 493; // Si
+const int NOTE_C5 = 523; // Dó (uma oitava acima)
+const int REST = 0; // Pausa entre as notas
 
-void setup()
-{
-  // Inicia a comunicação serial
-  Serial.begin(9600);
+// Notas da música "Ode to Joy"
+int melody[] = {
+  NOTE_E4, NOTE_E4, NOTE_F4, NOTE_G4,  // Primeira frase
+  NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4,  // Segunda frase
+  NOTE_C4, NOTE_C4, NOTE_D4, NOTE_E4,  // Terceira frase
+  NOTE_E4, NOTE_D4, NOTE_D4, REST,      // Quarta frase
 
-  // Inicia o barramento SPI
-  SPI.begin();
+  NOTE_E4, NOTE_E4, NOTE_F4, NOTE_G4,  // Quinta frase
+  NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4,  // Sexta frase
+  NOTE_C4, NOTE_C4, NOTE_D4, NOTE_E4,  // Sétima frase
+  NOTE_D4, NOTE_C4, REST, REST         // Oitava frase
+};
 
-  // Inicia o módulo MFRC522
-  mfrc522.PCD_Init();
+// Durações das notas em milissegundos
+int noteDurations[] = {
+  400, 400, 400, 400,  // Primeira frase
+  400, 400, 400, 400,  // Segunda frase
+  400, 400, 400, 400,  // Terceira frase
+  800, 800, 800, 800,  // Quarta frase
+  
+  400, 400, 400, 400,  // Quinta frase
+  400, 400, 400, 400,  // Sexta frase
+  400, 400, 400, 400,  // Sétima frase
+  800, 800, 800, 800   // Oitava frase
+};
 
-  // Mensagem inicial na serial
-  Serial.println("Aproxime o seu cartao/TAG do leitor");
-  Serial.println();
-
-  // Define os pinos dos LEDs como saída
-  pinMode(LED_R, OUTPUT);
-  pinMode(LED_G, OUTPUT);
+void setup() {
+  pinMode(buzzerPin, OUTPUT); // Configura o pino do buzzer como saída
 }
- 
-void loop()
-{
-  // Inicializa os LEDs: verde apagado, vermelho aceso
-  digitalWrite(LED_G, LOW);
-  digitalWrite(LED_R, HIGH);
- 
-  // Verifica se há um novo cartão presente
-  if (!mfrc522.PICC_IsNewCardPresent())
-  {
-    return; // Sai do loop se nenhum novo cartão for detectado
-  }
 
-  // Tenta ler o cartão
-  if (!mfrc522.PICC_ReadCardSerial())
-  {
-    return; // Sai do loop se a leitura do cartão falhar
-  }
+void loop() {
+  // Toca a melodia
+  for (int i = 0; i < 32; i++) {
+    int note = melody[i];          // Obtém a nota atual
+    int duration = noteDurations[i]; // Obtém a duração da nota atual
 
-  // Mostra o ID do cartão/tag na serial
-  Serial.print("ID do Cartao/tag:");
-  String conteudo = ""; // String para armazenar o conteúdo do ID
-  byte letra; // Variável auxiliar para armazenar o byte lido
-  for (byte i = 0; i < mfrc522.uid.size; i++)
-  {
-    Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " "); // Formata a saída em hexadecimal
-    Serial.print(mfrc522.uid.uidByte[i], HEX); // Imprime o byte em hexadecimal
-    conteudo.concat(String(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ")); // Adiciona o byte à string conteúdo
-    conteudo.concat(String(mfrc522.uid.uidByte[i], HEX)); // Concatena o byte em formato hexadecimal à string
+    if (note > 0) {
+      tone(buzzerPin, note, duration); // Toca a nota
+    } else {
+      noTone(buzzerPin); // Pausa (desativa o buzzer)
+    }
+
+    delay(duration * 1.30); // Adiciona um pequeno atraso entre as notas
   }
-  Serial.println(); // Nova linha após mostrar o ID
-  Serial.print("Mensagem : ");
-  conteudo.toUpperCase(); // Converte a string para maiúsculas
- 
-  // Verifica se o ID lido corresponde a um dos IDs autorizados
-  if (conteudo.substring(1) == "51 48 9B 2E" || 
-      conteudo.substring(1) == "D3 7F 94 79" || 
-      conteudo.substring(1) == "14 A7 B1 7A" || 
-      conteudo.substring(1) == "94 43 BB 7A") // IDs dos cartões autorizados
-  {
-    // Se o ID for autorizado, acende o LED verde e apaga o vermelho
-    Serial.println("Acesso autorizado !");
-    Serial.println();
-    digitalWrite(LED_G, HIGH);
-    digitalWrite(LED_R, LOW);
-    delay(5000); // Mantém o LED verde aceso por 5 segundos
-    digitalWrite(LED_G, LOW);
-    digitalWrite(LED_R, HIGH); // Restaura o estado inicial dos LEDs
-  }
+  
+  delay(2000); // Atraso entre repetições da música
 }
