@@ -66,4 +66,4 @@ void loop() {
   delay(1000);
   digitalWrite(ledPin3, LOW);
 }
->>>>>>> 62596efe297f8a502af1c4051dc3acd7076af92e
+
