@@ -1,3 +1,11 @@
+/*
+  Controle de Lâmpada com LDR e Relé
+  Este exemplo demonstra como utilizar um sensor LDR para controlar uma lâmpada através de um relé.
+  A lâmpada será ligada quando o ambiente estiver escuro e desligada durante o dia.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
 // Definição dos pinos
 const int PINO_RELE = 10; // PINO DIGITAL UTILIZADO PELO RELÉ
 const int PINO_LDR = A2;  // PINO ANALÓGICO UTILIZADO PELO LDR

@@ -1,76 +1,80 @@
-/*LiquidCrystal Library - Autoscroll
+/**************************************************************************
+                    Placa de Desenvolvimento Arduino UNO 
+                Demonstração do Uso de um Display LCD 16x2 - Autoscroll
+                    Elaborado/Adaptado por Epaminondas Lage
+ **************************************************************************
 
- Demonstrates the use a 16x2 LCD display.  The LiquidCrystal
- library works with all LCD displays that are compatible with the
- Hitachi HD44780 driver. There are many of them out there, and you
- can usually tell them by the 16-pin interface.
+  Biblioteca LiquidCrystal - Autoscroll
 
- This sketch demonstrates the use of the autoscroll()
- and noAutoscroll() functions to make new text scroll or not.
+  Demonstra o uso de um display LCD 16x2. A biblioteca LiquidCrystal
+  funciona com todos os displays LCD compatíveis com o driver
+  Hitachi HD44780. Existem muitos desses displays disponíveis, e
+  geralmente é possível identificá-los pela interface de 16 pinos.
 
- The circuit:
- * LCD RS pin to digital pin 6
- * LCD Enable pin to digital pin 7
- * LCD D4 pin to digital pin 5
- * LCD D5 pin to digital pin 4
- * LCD D6 pin to digital pin 3
- * LCD D7 pin to digital pin 2
- * LCD R/W pin to ground
- * 10K resistor:
- * ends to +5V and ground
- * wiper to LCD VO pin (pin 3)
+  Este sketch demonstra o uso das funções autoscroll()
+  e noAutoscroll() para fazer o texto novo rolar automaticamente ou não.
 
- Library originally added 18 Apr 2008
- by David A. Mellis
- library modified 5 Jul 2009
- by Limor Fried (http://www.ladyada.net)
- example added 9 Jul 2009
- by Tom Igoe
- modified 22 Nov 2010
- by Tom Igoe
- modified 7 Nov 2016
- by Arturo Guadalupi
+  O circuito:
+  * Pino RS do LCD no pino digital 6 do Arduino
+  * Pino Enable do LCD no pino digital 7 do Arduino
+  * Pino D4 do LCD no pino digital 5 do Arduino
+  * Pino D5 do LCD no pino digital 4 do Arduino
+  * Pino D6 do LCD no pino digital 3 do Arduino
+  * Pino D7 do LCD no pino digital 2 do Arduino
+  * Pino R/W do LCD ao GND
+  * Resistor de 10K:
+  * extremidades conectadas ao +5V e ao GND
+  * terminal central conectado ao pino VO do LCD (pino 3)
 
- This example code is in the public domain.
+  Código original da biblioteca adicionado em 18 de abril de 2008
+  por David A. Mellis
+  Biblioteca modificada em 5 de julho de 2009
+  por Limor Fried (http://www.ladyada.net)
+  Exemplo adicionado em 9 de julho de 2009
+  por Tom Igoe
+  Modificado em 22 de novembro de 2010
+  por Tom Igoe
+  Modificado em 7 de novembro de 2016
+  por Arturo Guadalupi
 
- http://www.arduino.cc/en/Tutorial/LiquidCrystalAutoscroll
+  Este código de exemplo é de domínio público.
 
+  http://www.arduino.cc/en/Tutorial/LiquidCrystalAutoscroll
 */
 
-// include the library code:
+// Inclui o código da biblioteca:
 #include <LiquidCrystal.h>
 
-// initialize the library by associating any needed LCD interface pin
-// with the arduino pin number it is connected to
+// Inicializa a biblioteca associando os pinos da interface LCD aos pinos do Arduino
 const int rs = 6, en = 7, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 void setup() {
-  // set up the LCD's number of columns and rows:
+  // Configura o número de colunas e linhas do LCD:
   lcd.begin(16, 2);
 }
 
 void loop() {
-  // set the cursor to (0,0):
+  // Define o cursor para a posição (0,0):
   lcd.setCursor(0, 0);
-  // print from 0 to 9:
+  // Imprime de 0 a 9 na primeira linha:
   for (int thisChar = 0; thisChar < 10; thisChar++) {
     lcd.print(thisChar);
     delay(500);
   }
 
-  // set the cursor to (16,1):
+  // Define o cursor para a posição (16,1), fora da tela visível na segunda linha:
   lcd.setCursor(16, 1);
-  // set the display to automatically scroll:
+  // Configura o display para rolagem automática:
   lcd.autoscroll();
-  // print from 0 to 9:
+  // Imprime de 0 a 9 na segunda linha com rolagem:
   for (int thisChar = 0; thisChar < 10; thisChar++) {
     lcd.print(thisChar);
     delay(500);
   }
-  // turn off automatic scrolling
+  // Desativa a rolagem automática
   lcd.noAutoscroll();
 
-  // clear screen for the next loop:
+  // Limpa a tela para o próximo loop:
   lcd.clear();
 }

@@ -1,3 +1,11 @@
+/*
+  Controle Aleatório de LEDs com Botão
+  Este exemplo demonstra como controlar quatro LEDs conectados aos pinos 8, 9, 10 e 11 de um Arduino,
+  usando um botão para gerar um número aleatório e acender o LED correspondente.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
 // Definição dos pinos dos LEDs
 const int led1 = 8;
 const int led2 = 9;
@@ -23,7 +31,7 @@ void setup() {
 }
 
 void loop() {
-  // Usando um loop for para repetir indefinidamente
+  // Usando um loop para repetir enquanto o botão não for pressionado
   for (; digitalRead(buttonPin) == LOW;) {
     // Gera um número aleatório entre 8 e 11 (pinos dos LEDs)
     a = random(8, 12);

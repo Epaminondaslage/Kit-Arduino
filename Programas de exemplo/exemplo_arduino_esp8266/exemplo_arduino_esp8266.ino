@@ -1,101 +1,107 @@
-#include <SoftwareSerial.h> //INCLUSÃO DE BIBLIOTECA
- 
-#define DEBUG true
+/**************************************************************************
+ *          Servidor Web com ESP8266 e Leitura de Pino Analógico          *
+ *                Elaborado/Adptado por Epaminondas Lage                  *
+ *                                                                        *
+ * Este código utiliza um módulo ESP8266 para criar um servidor web que   *
+ * exibe a leitura do pino analógico A1 em uma página web. O servidor é   *
+ * acessível através de um navegador web, e a página é atualizada         *
+ * automaticamente a cada 5 segundos.                                     *
+ **************************************************************************/
 
-//O TX DO ESP-01 DEVE SER LIGADO NO PINO 2 (RX) DO ARDUINO
-//O RX DO ESP-01 DEVE SER LIGADO NO PINO 3 (TX) DO ARDUINO
+#include <SoftwareSerial.h> // Inclusão da biblioteca para comunicação serial via software
 
-SoftwareSerial esp8266(2,3); ///OBJETO DO TIPO SoftwareSerial ( 2 = RX / 3 = TX)
+#define DEBUG true // Define uma constante para habilitar o modo de depuração
 
-String leituraAnalog1 = ""; //VARIÁVEL DO TIPO STRING
+// O TX do ESP-01 deve ser ligado no pino 2 (RX) do Arduino
+// O RX do ESP-01 deve ser ligado no pino 3 (TX) do Arduino
+
+SoftwareSerial esp8266(2, 3); // Cria um objeto do tipo SoftwareSerial (pino 2 = RX / pino 3 = TX)
+
+String leituraAnalog1 = ""; // Variável do tipo String para armazenar a leitura analógica
 
 void setup(){
-  delay(500); //INTERVALO DE 500 MILISSEGUNDOS
-  Serial.begin(9600); //INICIALIA A SERIAL DO ARDUINO
-  esp8266.begin(9600); //INICIALIA A SERIAL DO ESP-01
+  delay(500); // Aguarda 500 milissegundos para inicialização
+  Serial.begin(9600); // Inicializa a comunicação serial do Arduino
+  esp8266.begin(9600); // Inicializa a comunicação serial com o ESP-01
   
-  sendData("AT+RST\r\n",2000,DEBUG); //REINICIA O ESP-01
-  sendData("AT+CWMODE=3\r\n",1000,DEBUG); //CONFIGURA O ESP-01 NO MODO DE OPERAÇÃO 3 (AP + STA)
-  sendData("AT+CWJAP=\"OliveiraRocha\",\"2015ano2015\"r\n",10000,DEBUG); //COLOQUE OS DADOS DA SUA REDE SEM FIO (NOME DA REDE EM SUA_REDE_WIFI E A SENHA EM SENHA_REDE_WIFI)
-  sendData("AT+CIFSR\r\n",1000,DEBUG); //RETORNA O IP EM QUE O ESP-01 FOI ALOCADO (MODO STA OU STATION)
-  sendData("AT+CIPMUX=1\r\n",1000,DEBUG); //HABILITA MULTIPLAS CONEXÕES
-  sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG); //HABILITA A PORTA 80
+  sendData("AT+RST\r\n", 2000, DEBUG); // Reinicia o ESP-01
+  sendData("AT+CWMODE=3\r\n", 1000, DEBUG); // Configura o ESP-01 no modo de operação 3 (AP + STA)
+  sendData("AT+CWJAP=\"OliveiraRocha\",\"2015ano2015\"\r\n", 10000, DEBUG); // Conecta à rede Wi-Fi com SSID e senha especificados
+  sendData("AT+CIFSR\r\n", 1000, DEBUG); // Retorna o IP alocado ao ESP-01 (modo STA)
+  sendData("AT+CIPMUX=1\r\n", 1000, DEBUG); // Habilita múltiplas conexões
+  sendData("AT+CIPSERVER=1,80\r\n", 1000, DEBUG); // Inicia um servidor na porta 80
 }
- 
+
 void loop(){
-  leituraAnalog1 = ""; //LIMPA O VALOR DA VARIÁVEL
+  leituraAnalog1 = ""; // Limpa o valor da variável leituraAnalog1
   
-  if(esp8266.available()){ //VERIFICA SE O ESP8266 ESTÁ ENVIANDO DADOS E SE ESTÁ DISPONÍVEL
+  if(esp8266.available()){ // Verifica se o ESP8266 está enviando dados
     
-    if(esp8266.find("+IPD,")){
+    if(esp8266.find("+IPD,")){ // Verifica se há dados recebidos pelo ESP8266
     
-    leituraAnalog1 = String(analogRead(1)); //VARIÁVEL RECEBE O VALOR LIDO NO PINO ANALÓGICO (VALOR É CONVERTIDO EM STRING ANTES DE SER ARMAZENADO)
+      leituraAnalog1 = String(analogRead(1)); // Lê o valor analógico do pino A1 e converte para String
      
-     int connectionId = esp8266.read()-48; //SUBTRAI 48, POIS O MÉTODO read() RETORNA OS VALORES ASCII E O PRIMEIRO NÚMERO DECIMAL COMEÇA EM 48
+      int connectionId = esp8266.read() - 48; // Lê o ID da conexão, ajustando o valor ASCII para decimal
      
-     //CONSTRUÇÃO DA PÁGINA WEB QUE SERÁ EXIBIDA QUANDO O WEBSERVER RECEBER UMA REQUISIÇÃO
-     String webpage = "<head><meta http-equiv=""refresh"" content=""5""></head>";
-     webpage+="<body style=background-color:#ADD8E6>";
-     webpage+="<center><h1>MasterWalker Shop</h1><h2> ESP8266</h2><h3>";
-     webpage+="Leitura no pino analogico A1: ";
-      webpage+=leituraAnalog1 + " </h3></center>";
+      // Cria a página web que será exibida quando o servidor receber uma requisição
+      String webpage = "<head><meta http-equiv=\"refresh\" content=\"5\"></head>";
+      webpage += "<body style=background-color:#ADD8E6>";
+      webpage += "<center><h1>CEFET-MG</h1><h2> ESP8266</h2><h3>";
+      webpage += "Leitura no pino analógico A1: ";
+      webpage += leituraAnalog1 + " </h3></center>";
       
-     String cipSend = "AT+CIPSEND="; //CRIA UMA VARIÁVEL PARA ENVIAR OS COMANDOS AO ESP-01
+      String cipSend = "AT+CIPSEND="; // Cria a string para enviar os comandos ao ESP-01
          
-     cipSend += connectionId;
-     cipSend += ",";
-     cipSend +=webpage.length();
-     cipSend +="\r\n";
+      cipSend += connectionId;
+      cipSend += ",";
+      cipSend += webpage.length();
+      cipSend += "\r\n";
      
-     //ENVIA OS COMANDOS PARA O MODULO
-     sendData(cipSend,1000,DEBUG);
-     sendData(webpage,1000,DEBUG);
+      // Envia os comandos para o módulo ESP-01
+      sendData(cipSend, 1000, DEBUG);
+      sendData(webpage, 1000, DEBUG);
      
-     //ENCERRA OS COMANDOS
-     String closeCommand = "AT+CIPCLOSE="; 
-     closeCommand+=connectionId;
-     closeCommand+="\r\n";
+      // Encerra a conexão
+      String closeCommand = "AT+CIPCLOSE="; 
+      closeCommand += connectionId;
+      closeCommand += "\r\n";
      
-     sendData(closeCommand,2000,DEBUG); //ENVIA OS COMANDOS DE ENCERRAMENTO
+      sendData(closeCommand, 2000, DEBUG); // Envia o comando para fechar a conexão
      
-     delay(5000); //INTERVALO DE DE 5 SEGUNDOS
+      delay(5000); // Aguarda 5 segundos antes de processar a próxima requisição
     }
   }
 }
 
-String sendData(String command, const int timeout, boolean debug){ //MÉTODO QUE ENVIA OS COMANDOS PARA O ESP-01
+String sendData(String command, const int timeout, boolean debug){ // Método que envia comandos ao ESP-01
 
-    String response = ""; //VARIÁVEL QUE ARMAZENA A RESPOSTA DO ESP-01
+    String response = ""; // Variável que armazena a resposta do ESP-01
     
-    esp8266.println(command); //IMPRIME OS COMANDOS DO ESP-01
+    esp8266.println(command); // Envia o comando para o ESP-01
     
-    long int time = millis(); //VARIÁVEL DO TIPO long int
+    long int time = millis(); // Armazena o tempo atual
     
-    while( (time+timeout) > millis()){
+    while((time + timeout) > millis()){ // Aguarda até que o tempo limite seja atingido
       while(esp8266.available()){
-        
-        char c = esp8266.read(); //CONCATENA CARACTERE POR CARACTERE RECEBIDO DO ESP-01
-        response+=c;
+        char c = esp8266.read(); // Lê caractere por caractere da resposta do ESP-01
+        response += c; // Armazena a resposta completa
       }  
     }
-    if(debug){//DEBUG DE RESPOSTA DO ESP8266
-      
-      Serial.println("Arduino : " + response); //IMPRIME NA SERIAL OS DADOS QUE O ESP-01 ENVIOU PARA O ARDUINO
+    
+    if(debug){ // Se o modo de depuração estiver ativado
+      Serial.println("Arduino: " + response); // Exibe a resposta do ESP-01 no monitor serial
     }
-    return response;
+    
+    return response; // Retorna a resposta obtida
 }
 
-long getDecimal(float val){ //CONVERSÃO DE FLOAT EM STRING
-  int intPart = int(val); //CONVERSÃO DE FLOAT EM INTEIRO
+long getDecimal(float val){ // Função que converte um valor float para decimal
+  int intPart = int(val); // Converte a parte inteira do valor
   
-  //multiplica por 100
-  //precisão de 2 casas decimais
-  long decPart = 100*(val-intPart); //MULTIPLICA POR 100 COM PRECISÃO DE 2 CASAS DECIMAIS
+  long decPart = 100 * (val - intPart); // Calcula a parte decimal com precisão de 2 casas decimais
   
-  if(decPart>0) //SE decPart VALOR FOR MAIOR QUE 0, FAZ
-  return(decPart);           
+  if(decPart > 0) // Se a parte decimal for maior que 0
+    return decPart; // Retorna a parte decimal
   
-  //SENÃO, FAZ
-  else if(decPart=0)
-     return(00);           
+  return 00; // Se não, retorna 0
 }

@@ -6,34 +6,42 @@
                     Prof. Ramiro Martins
                     Modificado em 17/06/19
  **************************************************************************/ 
-#include <DS3231.h>
-DS3231 rtc(SDA, SCL);
+
+#include <DS3231.h> // Inclui a biblioteca para controlar o RTC DS3231
+
+DS3231 rtc(SDA, SCL); // Inicializa o RTC utilizando os pinos SDA e SCL
 
 void setup()
 {
-  // Inicialização da comunicação
+  // Inicialização da comunicação serial
   Serial.begin(9600);
-  // Initialização do rtc
+  // Inicialização do RTC
   rtc.begin();
 
-  // As linhas seguintes têm de ser atualizadas com a Data e Hora de envio do programa para o Arduíno
-  rtc.setDOW(MONDAY);     // Deve ser alterado o dia da semana para o dia em que estás em inglês
-  rtc.setTime(15, 29, 0);     // Escreve as horas no formato 12:00:00 (formato 24 horas)
-  rtc.setDate(20, 3, 2017);   // Escreve a data de acordo com o sistema que utilizas DD, MM, AAAA
-  // Este programa escreve a data e hora no RTC e o relógio fica a trabalhar
+  // Configuração inicial da data e hora no RTC
+  rtc.setDOW(MONDAY);        // Define o dia da semana (em inglês)
+  rtc.setTime(15, 29, 0);    // Define a hora no formato 24 horas (HH:MM:SS)
+  rtc.setDate(20, 3, 2017);  // Define a data (DD, MM, AAAA)
+
+  // As configurações acima só precisam ser feitas uma vez, no upload inicial.
+  // Após a configuração inicial, o RTC manterá a data e hora atualizadas.
 }
-// As linhas seguintes são para fazer a leitura da data e hora
+
 void loop()
 {
-  // Le o dia de semana
+  // Leitura e exibição do dia da semana
   Serial.print("Dia da semana: ");
-  Serial.println(rtc.getDOWStr());
-  // Le a data
+  Serial.println(rtc.getDOWStr()); // Obtém e exibe o dia da semana
+
+  // Leitura e exibição da data
   Serial.print("Data: ");
-  Serial.println(rtc.getDateStr());
-  // Envia as horas
+  Serial.println(rtc.getDateStr()); // Obtém e exibe a data
+
+  // Leitura e exibição da hora
   Serial.print("Horas: ");
-  Serial.println(rtc.getTimeStr());
-  // Tempo de espera antes de uma nova leitura 1 segundo
-  delay (1000);
+  Serial.println(rtc.getTimeStr()); // Obtém e exibe a hora
+
+  // Espera de 1 segundo antes de realizar a próxima leitura
+  delay(1000);
 }
+

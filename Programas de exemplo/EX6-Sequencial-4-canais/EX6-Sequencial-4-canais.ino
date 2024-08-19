@@ -1,3 +1,12 @@
+/*
+  Controle Sequencial de Quatro LEDs
+  Este exemplo demonstra como controlar quatro LEDs conectados aos pinos 8, 9, 10 e 11 de um Arduino,
+  acendendo cada um deles sequencialmente com um intervalo de 0,5 segundos.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
+// Definição dos pinos dos LEDs
 const int ledPins[] = {8, 9, 10, 11}; // Pinos onde os LEDs estão conectados
 
 void setup() {
@@ -14,4 +23,3 @@ void loop() {
     delay(500); // Espera 0,5 segundos
   }
 }
-

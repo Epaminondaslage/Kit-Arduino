@@ -1,3 +1,11 @@
+/*
+  Controle de Brilho de LED com LDR e Modo Noturno
+  Este exemplo demonstra como utilizar um sensor LDR para ajustar o brilho de um LED,
+  com a opção de ativar um modo noturno através de uma chave.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
 // Definição dos pinos
 const int PINO_LED = 9;           // Pino PWM conectado ao LED
 const int PINO_LDR = A0;          // Pino analógico conectado ao LDR

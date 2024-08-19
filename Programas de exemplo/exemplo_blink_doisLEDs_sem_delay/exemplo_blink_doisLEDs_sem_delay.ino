@@ -1,50 +1,61 @@
-int redLedPin = 13; //VARIÁVEL RECEBE O PINO DIGITAL EM QUE O LED VERMELHO ESTÁ CONECTADO
-int greenLedPin = 12; //VARIÁVEL RECEBE O PINO DIGITAL EM QUE O LED VERDE ESTÁ CONECTADO
+/**************************************************************************
+ *                 Placa de Desenvolvimento Arduino Uno                   *
+ *               Controle Independente de Dois LEDs com Intervalos        *
+ * Elaborado/Adaptado  Epaminondas Lage                                   *
+ *                                                                        *
+ * Este código controla dois LEDs conectados aos pinos digitais 13 e 12   *
+ * de forma independente. Cada LED é configurado para piscar com um       *
+ * intervalo específico, utilizando a função millis() para controlar o    *
+ * tempo sem bloquear o loop principal.                                   *
+ **************************************************************************/
 
-int redLedState = LOW; //DEFINE QUE O ESTADO INICIAL DO LED VERMELHO É DESLIGADO
-int greenLedState = LOW; //DEFINE QUE O ESTADO INICIAL DO LED VERDE É DESLIGADO
+int redLedPin = 13; // Variável que define o pino digital onde o LED vermelho está conectado
+int greenLedPin = 12; // Variável que define o pino digital onde o LED verde está conectado
 
-long previousMillisRed = 0; //VARIÁVEL QUE CONTROLA O TEMPO DO LED VERMELHO
-long previousMillisGreen = 0; //VARIÁVEL QUE CONTROLA O TEMPO DO LED VERDE
+int redLedState = LOW; // Define que o estado inicial do LED vermelho é desligado
+int greenLedState = LOW; // Define que o estado inicial do LED verde é desligado
 
-long redLedInterval = 2000; //VARIÁVEL QUE REGISTRA O INTERVALO (2000ms = 2 SEGUNDOS)
-long greenLedInterval = 2000; //VARIÁVEL QUE REGISTRA O INTERVALO (500ms = 500 MILISEGUNDOS)
+long previousMillisRed = 0; // Variável que armazena o tempo anterior para o LED vermelho
+long previousMillisGreen = 0; // Variável que armazena o tempo anterior para o LED verde
+
+long redLedInterval = 2000; // Intervalo de tempo em milissegundos para o LED vermelho (2000 ms = 2 segundos)
+long greenLedInterval = 2000; // Intervalo de tempo em milissegundos para o LED verde (2000 ms = 2 segundos)
 
 void setup(){  
-  pinMode(redLedPin, OUTPUT); //DEFINE A PORTA COMO SAÍDA
-  pinMode(greenLedPin, OUTPUT); //DEFINE A PORTA COMO SAÍDA 
+  pinMode(redLedPin, OUTPUT); // Configura o pino do LED vermelho como saída
+  pinMode(greenLedPin, OUTPUT); // Configura o pino do LED verde como saída
 }
-void loop()
-{
-  //INICIO DO CONTROLE DO LED VERMELHO
-  unsigned long currentMillisRed = millis(); //VARIÁVEL RECEBE O TEMPO ATUAL EM MILISEGUNDOS
 
-  if (currentMillisRed - previousMillisRed > redLedInterval) { //SE O TEMPO ATUAL MENOS O TEMPO ANTERIOR FOR MENOR QUE O INTERVALO, FAZ
-    previousMillisRed = currentMillisRed; //TEMPO ANTERIOR GUARDA O TEMPO ATUAL
+void loop() {
+  // Controle do LED vermelho
+  unsigned long currentMillisRed = millis(); // Armazena o tempo atual em milissegundos para o LED vermelho
 
-    if (redLedState == LOW) { //VERIFICA O ESTADO ATUAL DO LED E SE ESTIVER EM LOW MUDA PARA HIGH
-      redLedState = HIGH; //VARIÁVEL RECEBE ESTADO HIGH(LIGA A PORTA)
-    } else { //VERIFICA O ESTADO ATUAL DO LED E SE ESTIVER EM HIGH MUDA PARA LOW
-      redLedState = LOW; //VARIÁVEL RECEBE ESTADO LOW(DESLIGA A PORTA)
+  if (currentMillisRed - previousMillisRed > redLedInterval) { // Verifica se o tempo decorrido é maior que o intervalo definido
+    previousMillisRed = currentMillisRed; // Atualiza o tempo anterior para o tempo atual
+
+    // Alterna o estado do LED vermelho
+    if (redLedState == LOW) { 
+      redLedState = HIGH; // Liga o LED vermelho
+    } else { 
+      redLedState = LOW; // Desliga o LED vermelho
     }
 
-    digitalWrite(redLedPin, redLedState); //ESCREVE NA PORTA DIGITAL 8 O ESTADO DO LED VERMELHO (HIGH OU LOW)
+    digitalWrite(redLedPin, redLedState); // Atualiza o estado do LED vermelho no pino 13
   }
-  //FIM DO CONTROLE DO LED VERMELHO
-  //-----------------------------------------------------------------------------------------------------------------------------------------
-  //INICIO DO CONTROLE DO LED VERDE
-  unsigned long currentMillisGreen = millis(); //VARIÁVEL RECEBE O TEMPO ATUAL EM MILISEGUNDOS
 
-  if (currentMillisGreen - previousMillisGreen > greenLedInterval) { //SE O TEMPO ATUAL MENOS O TEMPO ANTERIOR FOR MENOR QUE O INTERVALO, FAZ
-    previousMillisGreen = currentMillisGreen; //TEMPO ANTERIOR GUARDA O TEMPO ATUAL
+  // Controle do LED verde
+  unsigned long currentMillisGreen = millis(); // Armazena o tempo atual em milissegundos para o LED verde
 
-    if (greenLedState == LOW) { //VERIFICA O ESTADO ATUAL DO LED E SE ESTIVER EM LOW MUDA PARA HIGH
-      greenLedState = HIGH; //VARIÁVEL RECEBE ESTADO HIGH(LIGA A PORTA)
-    } else { //VERIFICA O ESTADO ATUAL DO LED E SE ESTIVER EM HIGH MUDA PARA LOW
-      greenLedState = LOW; //VARIÁVEL RECEBE ESTADO LOW(DESLIGA A PORTA)
+  if (currentMillisGreen - previousMillisGreen > greenLedInterval) { // Verifica se o tempo decorrido é maior que o intervalo definido
+    previousMillisGreen = currentMillisGreen; // Atualiza o tempo anterior para o tempo atual
+
+    // Alterna o estado do LED verde
+    if (greenLedState == LOW) { 
+      greenLedState = HIGH; // Liga o LED verde
+    } else { 
+      greenLedState = LOW; // Desliga o LED verde
     }
 
-    digitalWrite(greenLedPin, greenLedState); //ESCREVE NA PORTA DIGITAL 9 O ESTADO DO LED VERDE (HIGH OU LOW)
+    digitalWrite(greenLedPin, greenLedState); // Atualiza o estado do LED verde no pino 12
   }
-  //FIM DO CONTROLE DO LED VERDE
 }

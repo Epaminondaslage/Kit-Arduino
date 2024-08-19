@@ -1,3 +1,12 @@
+/*
+  Controle de Piscar LED com Ciclos de 5 Segundos
+  Este exemplo demonstra como fazer um LED piscar a cada segundo,
+  e a cada 5 segundos, o LED pisca continuamente por 2 segundos.
+
+  Elaborado/Adaptado por Epaminondas Lage
+*/
+
+// Definição do pino do LED
 const int ledPin = 13; // Pino do LED
 
 void setup() {
@@ -26,4 +35,3 @@ void loop() {
   
   delay(1000); // Espera 1 segundo para completar o ciclo de 5 segundos
 }
-
