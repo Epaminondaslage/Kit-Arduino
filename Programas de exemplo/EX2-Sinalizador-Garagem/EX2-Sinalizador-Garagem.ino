@@ -8,7 +8,7 @@
 */
 
 // Define os pinos dos LEDs
-const int ledPin1 = 8;  // LED 1 conectado ao pino digital 8
+const int ledPin1 = 13;  // LED 1 conectado ao pino digital 13
 const int ledPin2 = 9;  // LED 2 conectado ao pino digital 9
 
 // Intervalo de tempo (em milissegundos) para alternar o estado dos LEDs
