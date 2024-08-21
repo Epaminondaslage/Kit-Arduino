@@ -1,6 +1,6 @@
 ## Jogo Genius (ou Simon Says) 
 
-Utilizar  um Arduino UNO, botões e LEDs. Esse código básico cria uma sequência de LEDs que o jogador deve repetir. O jogo fica progressivamente mais difícil, adicionando mais LEDs à sequência a cada rodada.
+O jogo Genius é uma aplicação de lógica e memória, onde o jogador precisa repetir sequências de luzes e sons que se tornam cada vez mais longas. O código é projetado para desafiar o jogador enquanto o Arduino gerencia a lógica do jogo e a detecção de erros.
 
 ### Componentes necessários:
 - 4 LEDs de cores diferentes (vermelho, verde, azul, amarelo)
@@ -58,3 +58,72 @@ O jogo segue um ciclo contínuo, controlado pela função `loop()`, que pode ser
  #### 4. **Reinício do Jogo**
 
 - Sempre que o jogador comete um erro ao repetir a sequência, o jogo reinicia. O nível volta a ser 0, e uma nova sequência é gerada aleatoriamente.
+
+  #### 5. Histórico de Pontuação
+
+- O código  armazena e exibe a maior pontuação atingida pelo jogador. Se o jogador atingir uma nova maior pontuação, ela é exibida na comunicação serial.
+
+  #### 6.  Timeout de 5 segundos
+
+ - Implementado um timeout de 5 segundos para que o jogador pressione o botão correto, tornando o jogo mais desafiador.
+
+  #### 7. Feedback de Avanço
+
+ - O jogo indica o nível atual via comunicação serial sempre que o jogador avança para a próxima rodada.
+
+
+
+### Descrição das Funções
+
+#### 1. `lightUp(int led, int duration)`
+
+Esta função acende o LED correspondente e toca o som associado por um tempo determinado.
+
+- **Parâmetros**:
+  - `led`: Índice do LED que será aceso.
+  - `duration`: Duração em milissegundos para a luz e som.
+
+- **Funcionamento**:
+  - A função ativa o pino do LED e aciona o buzzer para emitir um som correspondente ao LED aceso. Após a duração especificada, o LED é apagado e o som é interrompido. Existe também uma pequena pausa entre os flashes para melhorar a visibilidade da sequência.
+
+#### 2. `playSequence()`
+
+Esta função toca a sequência de LEDs e sons armazenada na variável `sequence` até o nível atual.
+
+- **Funcionamento**:
+  - A função percorre o array `sequence` até o índice correspondente ao nível atual (`level`), acendendo cada LED e tocando o som correspondente na ordem correta.
+
+#### 3. `checkButtonWithTimeout(int button, int timeout)`
+
+Esta função verifica se o botão correto foi pressionado pelo jogador, com um tempo limite (timeout) para a espera.
+
+- **Parâmetros**:
+  - `button`: Índice do botão que está sendo verificado.
+  - `timeout`: Tempo limite em milissegundos para o jogador pressionar o botão.
+
+- **Retorno**:
+  - `true` se o botão correto foi pressionado dentro do tempo limite; `false` caso contrário.
+
+- **Funcionamento**:
+  - A função verifica repetidamente o estado do botão durante o período do timeout. Se o botão correto for pressionado dentro do tempo limite, o LED correspondente acende, o som é tocado e a função retorna `true`. Caso contrário, a função retorna `false` após o timeout.
+
+#### 4. `setup()`
+
+Esta função é executada uma vez no início do programa e configura os pinos e inicializa variáveis.
+
+- **Funcionamento**:
+  - Configura os pinos dos LEDs como saídas, os pinos dos botões como entradas, e o pino do buzzer como saída.
+  - Inicia a comunicação serial para debugging e exibição de informações.
+  - Inicializa o gerador de números aleatórios e define o primeiro item da sequência.
+  - Exibe a mensagem inicial e a maior pontuação armazenada até o momento.
+
+#### 5. `loop()`
+
+Esta função é executada continuamente e controla o fluxo principal do jogo.
+
+- **Funcionamento**:
+  - Reproduz a sequência atual de LEDs e sons usando a função `playSequence()`.
+  - Espera que o jogador repita a sequência pressionando os botões na ordem correta. Se o jogador pressiona o botão incorreto, o jogo reinicia e a maior pontuação é atualizada, se necessário.
+  - Se a sequência for repetida corretamente, um novo item é adicionado à sequência e o jogo avança para o próximo nível, indicando o progresso via comunicação serial.
+
+
