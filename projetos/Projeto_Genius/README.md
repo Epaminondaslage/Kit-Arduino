@@ -59,12 +59,12 @@ O jogo segue um ciclo contínuo, controlado pela função `loop()`, que pode ser
 
 - Sempre que o jogador comete um erro ao repetir a sequência, o jogo reinicia. O nível volta a ser 0, e uma nova sequência é gerada aleatoriamente.
 
-  #### 5. Histórico de Pontuação
+ #### 5. Histórico de Pontuação
 
 - O código  armazena e exibe a maior pontuação atingida pelo jogador. Se o jogador atingir uma nova maior pontuação, ela é exibida na comunicação serial.
-
+  
   #### 6.  Timeout de 5 segundos
-
+  
  - Implementado um timeout de 5 segundos para que o jogador pressione o botão correto, tornando o jogo mais desafiador.
 
   #### 7. Feedback de Avanço
