@@ -64,6 +64,7 @@ O projeto final de disciplina tem como objetivo principal proporcionar aos aluno
 
 - [Arquivo PPTX do Projeto](https://docs.google.com/presentation/d/1qHnl0xS7vUqv_oAijarzJGzUGFq1pJfB/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
 - [Repositório do Projeto](https://github.com/Epaminondaslage/Projeto_final_Disciplina)
+- [Trabalhos dos Alunos ELE1B-2024](https://github.com/Epaminondaslage/Trabalhos-Alunos-ELE1B)
  
 # Kit Arduino Básico- Componentes
 
