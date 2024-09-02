@@ -58,12 +58,28 @@ Os slides de PowerPoint do curso de Arduino são uma ferramenta essencial para t
 - [Apresentação 1](https://docs.google.com/presentation/d/1xNcnfATCOnP69R0GXfWbdoShxTK1as-e/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
 - [Apresentação 2](https://docs.google.com/presentation/d/15aVcfabaigF9RZD1qO9j5lWnm4hAVuIn/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
 
+# Modelo de Repositorio do Aluno a ser criado no Github
+
+Os alunos deverão criar e gerenciar seus próprios repositórios, onde serão armazenados e apresentados todos os trabalhos desenvolvidos ao longo da disciplina. Isso inclui os exercícios realizados em sala de aula, as atividades para serem realizadas em casa e o projeto final. Cada repositório deverá ser organizado de forma clara, contendo os códigos, relatórios e demais materiais necessários para a avaliação. A utilização de repositórios possibilitará uma maior organização, além de proporcionar o desenvolvimento de habilidades em controle de versão e documentação, essenciais para o trabalho colaborativo em projetos técnicos e acadêmicos.
+
+- [Modelo de Repositório](https://github.com/Epaminondaslage/Aluno_Fulano_de_Tal)
+
 # Projeto Final de Disciplina
 
 O projeto final de disciplina tem como objetivo principal proporcionar aos alunos a oportunidade de aplicar de forma prática os conhecimentos adquiridos ao longo do curso, por meio do desenvolvimento de uma solução real e funcional utilizando a plataforma Arduino. Este projeto pode abranger diversas áreas de aplicação, como a automação de sistemas simples, a medição e monitoramento de parâmetros elétricos, ou até mesmo a criação de dispositivos interativos. A intenção é que os alunos integrem conceitos teóricos com habilidades práticas, resultando em um produto que demonstre sua capacidade de resolução de problemas e inovação técnica.
 
 - [Arquivo PPTX do Projeto](https://docs.google.com/presentation/d/1qHnl0xS7vUqv_oAijarzJGzUGFq1pJfB/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
+
+# Modelo de Repositório de Final de Disciplina
+
+O repositório "Projeto_final_Disciplina" é dedicado ao projeto final da disciplina de Informática Aplicada no curso Técnico de Eletrotécnica. Ele contém uma descriçao do projetos prático desenvolvido com Arduino. Cada projeto deverá ser documentado com instruções detalhadas, códigos, e diagramas de circuito, oferecendo uma visão completa do desenvolvimento e da implementação dos sistemas.
+
 - [Repositório do Projeto](https://github.com/Epaminondaslage/Projeto_final_Disciplina)
+
+# O repositório "Trabalhos-Alunos-ELE1B"
+
+Ele contém os projetos e atividades desenvolvidos pelos alunos da turma 1B do curso de Eletrotécnica no CEFET-MG durante o ano de 2024. Ele inclui projetos individuais, projetos em grupo, atividades realizadas em sala de aula, e a documentação técnica associada. Este espaço serve como um portfólio digital onde os alunos podem compartilhar seu trabalho e colaborar entre si. O repositório também permite contribuições via pull requests, promovendo um ambiente colaborativo de aprendizado.
+
 - [Trabalhos dos Alunos ELE1B-2024](https://github.com/Epaminondaslage/Trabalhos-Alunos-ELE1B)
  
 # Kit Arduino Básico- Componentes
