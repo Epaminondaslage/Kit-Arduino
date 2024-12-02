@@ -55,8 +55,8 @@ A ementa do curso de Arduino básico encontram-se no link abaixo:
 
 Os slides de PowerPoint do curso de Arduino são uma ferramenta essencial para transmitir o conteúdo de forma estruturada e visualmente atraente. Eles foram elaborados com o objetivo de facilitar o entendimento dos conceitos fundamentais, práticas de programação, e aplicações de hardware, proporcionando uma experiência de aprendizado  envolvente para os alunos.
 
-- [Apresentação 1](https://docs.google.com/presentation/d/1xNcnfATCOnP69R0GXfWbdoShxTK1as-e/edit?usp=sharing&ouid=101750793150395365396&rtpof=true&sd=true)
-- [Apresentação 2](https://docs.google.com/presentation/d/15aVcfabaigF9RZD1qO9j5lWnm4hAVuIn/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
+- [Apresentação 1](https://docs.google.com/presentation/d/1CORnth0hN8KNVmBGUpBjT0e2-gRfQcfZ/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
+- [Apresentação 2](https://docs.google.com/presentation/d/1FcnofAPZK5yyRE3SWqcSLbuY-w5lGori/edit?usp=drive_link&ouid=101750793150395365396&rtpof=true&sd=true)
 
 # Modelo de Repositorio do Aluno a ser criado no Github
 
