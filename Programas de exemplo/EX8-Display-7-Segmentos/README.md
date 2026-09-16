@@ -37,7 +37,7 @@ O código utiliza sete pinos digitais (2 a 8) do Arduino para controlar os segme
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

@@ -42,7 +42,7 @@ O programa alterna continuamente entre ligar o LED 1 e desligar o LED 2, e vice-
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

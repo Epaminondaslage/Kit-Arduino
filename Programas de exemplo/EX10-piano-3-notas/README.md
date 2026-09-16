@@ -40,7 +40,7 @@ O código utiliza três botões conectados aos pinos 2, 3 e 4 para acionar três
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

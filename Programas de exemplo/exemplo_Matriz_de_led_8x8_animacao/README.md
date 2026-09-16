@@ -43,7 +43,7 @@ O código armazena uma sequência de imagens na memória flash do Arduino utiliz
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

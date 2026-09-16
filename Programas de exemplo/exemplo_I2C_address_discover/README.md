@@ -44,7 +44,7 @@ O código percorre todos os endereços I2C possíveis (de 0 a 127) e tenta se co
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

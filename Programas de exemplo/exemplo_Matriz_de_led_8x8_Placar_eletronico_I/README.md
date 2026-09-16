@@ -61,7 +61,7 @@ O código inicializa duas matrizes de LEDs 8x8, que são controladas individualm
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

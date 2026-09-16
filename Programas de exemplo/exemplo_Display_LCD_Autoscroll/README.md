@@ -52,7 +52,7 @@ O código inicializa o display LCD com 16 colunas e 2 linhas. Em seguida, o loop
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

@@ -37,7 +37,7 @@ O código permite que você controle o LED conectado ao pino 13 de um Arduino di
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

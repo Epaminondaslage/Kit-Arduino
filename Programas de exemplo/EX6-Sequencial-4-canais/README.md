@@ -36,7 +36,7 @@ O código utiliza um array para armazenar os pinos digitais (8, 9, 10 e 11) onde
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

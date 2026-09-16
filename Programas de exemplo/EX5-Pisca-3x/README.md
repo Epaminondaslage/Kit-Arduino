@@ -38,7 +38,7 @@ O código faz o LED piscar três vezes, com cada piscada durando 100 ms, seguido
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

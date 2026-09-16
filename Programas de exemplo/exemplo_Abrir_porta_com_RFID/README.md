@@ -68,7 +68,7 @@ Você pode adicionar ou remover IDs autorizados conforme necessário, modificand
 
 ## Licença
 
-Este projeto é licenciado sob a [MIT License](LICENSE).
+Este projeto é licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

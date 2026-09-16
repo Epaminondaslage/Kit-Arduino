@@ -47,7 +47,7 @@ O código usa a função `sin()` para calcular um valor de PWM baseado em um ân
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

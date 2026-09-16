@@ -46,7 +46,7 @@ O código inicializa o módulo RTC DS3231 e verifica se o relógio está atualiz
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

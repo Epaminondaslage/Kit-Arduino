@@ -37,7 +37,7 @@ O código utiliza um botão conectado ao pino 3 para acionar o processo de gera�
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

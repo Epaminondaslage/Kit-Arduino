@@ -33,7 +33,7 @@ O código utiliza o pino `LED_BUILTIN`, que está conectado ao LED embutido na m
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

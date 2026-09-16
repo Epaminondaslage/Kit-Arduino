@@ -55,7 +55,7 @@ O código define uma matriz que mapeia quais segmentos devem estar acesos para r
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

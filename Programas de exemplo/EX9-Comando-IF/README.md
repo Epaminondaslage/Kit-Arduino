@@ -37,7 +37,7 @@ O código faz o LED piscar a cada segundo. A cada ciclo de 5 segundos, o LED pis
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

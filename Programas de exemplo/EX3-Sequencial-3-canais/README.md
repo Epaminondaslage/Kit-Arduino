@@ -36,7 +36,7 @@ O código utiliza três pinos digitais (4, 5 e 6) para controlar três LEDs. No 
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 

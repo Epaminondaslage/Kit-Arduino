@@ -80,7 +80,7 @@ O código utiliza um sensor LDR conectado ao pino analógico A0 do Arduino para 
 
 ## Licença
 
-Este projeto é de código aberto e está licenciado sob a [MIT License](LICENSE).
+Este projeto é de código aberto e está licenciado sob a [MIT License](../../LICENSE).
 
 ## Contribuição
 
